@@ -1,0 +1,7 @@
+.font-oxygen {
+  font-family: "Oxygen", sans-serif;
+}
+.shapes-bg {
+  background-image: url("./pages/img/me.svg");
+  background-size: cover;
+}
