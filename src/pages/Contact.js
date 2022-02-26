@@ -2,7 +2,7 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <div className=" bg-[#B9C9EA] md:h-full  font-oxygen shapes-bg ">
+    <div classNameName=" bg-[#B9C9EA] md:h-full   shapes-bg ">
       <div className="bg-white py-6 sm:py-8 lg:py-12 font-oxygen shapes-bg">
         <div className="max-w-screen-2xl px-4 md:px-8 mx-auto">
           <div className="mb-10 md:mb-16">
@@ -71,7 +71,7 @@ const Contact = () => {
             </div>
 
             <div className="sm:col-span-2 flex justify-between items-center">
-              <button className="inline-block bg-indigo-500 hover:bg-indigo-600 active:bg-indigo-700 focus-visible:ring ring-indigo-300 text-white text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-8 py-3">
+              <button className="inline-block bg-blue-500 hover:bg-indigo-600 active:bg-indigo-700 focus-visible:ring ring-indigo-300 text-white text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-8 py-3">
                 Send
               </button>
 
@@ -81,7 +81,7 @@ const Contact = () => {
             <p className="text-gray-400 text-xs">
               By signing up to our newsletter you agree to our{" "}
               <a
-                href="#"
+                href="#_"
                 className="hover:text-indigo-500 active:text-indigo-600 underline transition duration-100"
               >
                 Privacy Policy
