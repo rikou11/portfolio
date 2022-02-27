@@ -5,3 +5,18 @@
   background-image: url("./pages/img/me.svg");
   background-size: cover;
 }
+.map {
+  z-index: 0;
+}
+.navbar {
+  z-index: 10;
+}
+
+.arrows {
+  background-image: url("./pages/img/Group\ 2.svg");
+  background-size: auto;
+  background-size: 300px;
+
+  background-position: left;
+  background-repeat: no-repeat;
+}

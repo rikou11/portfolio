@@ -2,97 +2,136 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <div classNameName=" bg-[#B9C9EA] md:h-full   shapes-bg ">
-      <div className="bg-white py-6 sm:py-8 lg:py-12 font-oxygen shapes-bg">
-        <div className="max-w-screen-2xl px-4 md:px-8 mx-auto">
-          <div className="mb-10 md:mb-16">
-            <h2 className="text-gray-800 text-2xl lg:text-3xl font-bold text-center mb-4 md:mb-6">
-              Get in touch
+    <div className=" bg-[#B9C9EA]   font-oxygen map">
+      <section className="text-gray-600 body-font relative">
+        <div className="absolute inset-0 bg-gray-300  map">
+          <iframe
+            width="100%"
+            height="100%"
+            frameBorder="0"
+            marginHeight="0"
+            marginWidth="0"
+            title="map"
+            scrolling="no"
+            className=" opacity-60 contrast-125"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7216.246385046597!2d55.305406423272764!3d25.26644098545584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5cccc32705f7%3A0xbd91b153f09e398!2sDeira%20-%20Al%20Rigga%20-%20Dubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2sdz!4v1645968281721!5m2!1sen!2sdz"
+          ></iframe>
+        </div>
+
+        <div className="container px-5 py-24 mx-auto flex shadow-2xl">
+          <div className="lg:w-1/3 md:w-1/2 bg-[#B9C9EA]  rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0 relative z-10 shadow-md">
+            <h2 className="text-white text-2xl font-bold mb-1 title-font">
+              Contact
             </h2>
-
-            <p className="max-w-screen-md text-gray-500 md:text-lg text-center mx-auto">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum
-              doloremque ab modi veritatis repellendus aliquam, magni adipisci
-              ipsam incidunt assumenda sequi cumque .
+            <p className="leading-relaxed mb-5 text-gray-600">
+              Post-ironic portland shabby chic echo park, banjo fashion axe
             </p>
-          </div>
-
-          <form className="max-w-screen-md grid sm:grid-cols-2 gap-4 mx-auto">
-            <div>
+            <div className="relative mb-4">
               <label
-                for="first-name"
-                className="inline-block text-gray-800 text-sm sm:text-base mb-2"
+                htmlFor="email"
+                className="leading-7 text-sm text-gray-600"
               >
-                First name*
+                Email
               </label>
               <input
-                name="first-name"
-                className="w-full bg-gray-50 text-gray-800 border focus:ring ring-indigo-300 rounded outline-none transition duration-100 px-3 py-2"
-              />
-            </div>
-
-            <div>
-              <label
-                for="last-name"
-                className="inline-block text-gray-800 text-sm sm:text-base mb-2"
-              >
-                Last name*
-              </label>
-              <input
-                name="last-name"
-                className="w-full bg-gray-50 text-gray-800 border focus:ring ring-indigo-300 rounded outline-none transition duration-100 px-3 py-2"
-              />
-            </div>
-
-            <div className="sm:col-span-2">
-              <label
-                for="email"
-                className="inline-block text-gray-800 text-sm sm:text-base mb-2"
-              >
-                Email*
-              </label>
-              <input
+                type="email"
+                id="email"
                 name="email"
-                className="w-full bg-gray-50 text-gray-800 border focus:ring ring-indigo-300 rounded outline-none transition duration-100 px-3 py-2"
+                className="w-full bg-white rounded border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-[#3C517A]text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out  hover:border-2 hover:border-[#3C517A] "
               />
             </div>
-
-            <div className="sm:col-span-2">
+            <div className="relative mb-4">
               <label
-                for="message"
-                className="inline-block text-gray-800 text-sm sm:text-base mb-2"
+                htmlFor="message"
+                className="leading-7 text-sm text-gray-600"
               >
-                Message*
+                Message
               </label>
               <textarea
+                id="message"
                 name="message"
-                className="w-full h-34 bg-gray-50 text-gray-800 border focus:ring ring-indigo-300 rounded outline-none transition duration-100 px-3 py-2"
+                className="w-full bg-white rounded border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-[#3C517A]h-20 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out hover:border-2 hover:border-[#3C517A] "
               ></textarea>
             </div>
-
-            <div className="sm:col-span-2 flex justify-between items-center">
-              <button className="inline-block bg-blue-500 hover:bg-indigo-600 active:bg-indigo-700 focus-visible:ring ring-indigo-300 text-white text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-8 py-3">
+            <div className="w-full flex justify-center">
+              {" "}
+              <button className="rounded-full min-w-[100px] min-h-[100px] md:w-32 md:h-32 shadow-2xl transition duration-0 md:duration-300 text-gray-90 border-2 border-white  bg-blue-800 text-white text-lg font-bold hover:bg-transparent hover:border-gray-900 ">
                 Send
               </button>
-
-              <span className="text-gray-500 text-sm">*Required</span>
             </div>
 
-            <p className="text-gray-400 text-xs">
-              By signing up to our newsletter you agree to our{" "}
-              <a
-                href="#_"
-                className="hover:text-indigo-500 active:text-indigo-600 underline transition duration-100"
-              >
-                Privacy Policy
-              </a>
-              .
+            <p className="text-xs text-gray-500 mt-3">
+              Chicharrones blog helvetica normcore iceland tousled brook viral
+              artisan.
             </p>
-          </form>
+          </div>
         </div>
-      </div>
+      </section>
     </div>
   );
 };
 
 export default Contact;
+
+//    <div className="md:grid md:grid-cols-2 md:h-[570px]">
+//         {/* // ? Contact information */}
+//         <div className="md:grid md:justify-center align-middle h-[300px] text-[#3C517A] ">
+//           <div className="md:py-20">
+//             <div className="pt-6 pb-3">
+//               <h1 className="text-6xl font-bold text-white ">Contact</h1>
+//               <h2 className="text-xl">Looking forward to hearing from you</h2>
+//             </div>
+
+//             <div className="pb-2">
+//               <h1 className="font-bold">Phone</h1>
+//               <h2>055-232-6152</h2>
+//             </div>
+//             <div>
+//               <h1 className="font-bold">Email</h1>
+//               <h2>Bensaadfares@gmail.com</h2>
+//             </div>
+//           </div>
+//         </div>
+//         {/* // ? fin Contact information */}
+//         <div className="md:grid md:grid-cols-2 md:h-[120px] md:w-[550px] md:pt-36">
+//           <div className="md:grid md:grid-cols-1">
+//             <label htmlFor="Firstname">First Name</label>
+//             <input
+//               type="text"
+//               name="firstname"
+//               id=""
+//               className="w-[250px] h-10 px-2 border-2  bg-[#B9C9EA] border-[#3C517A] border-opacity-30 active:rounded-none active:border-blue-900 rounded-none hover:border-[#3C517A]    transition duration-0 md:duration-150 "
+//             />
+//           </div>
+
+//           <div className="md:grid md:grid-cols-1">
+//             <label htmlFor="Lastname">Last Name</label>
+//             <input
+//               type="text"
+//               name="lastname"
+//               id=""
+//               className="w-[250px] h-10 px-2 border-2  bg-[#B9C9EA] border-[#3C517A] border-opacity-30 active:rounded-none active:border-blue-900 rounded-none hover:border-[#3C517A]    transition duration-0 md:duration-150 "
+//             />
+//           </div>
+
+//           <div className="md:grid md:grid-cols-1">
+//             <label htmlFor="Email">Email*</label>
+//             <input
+//               type="email"
+//               name="email"
+//               id=""
+//               className="w-[250px] h-10 px-2 border-2  bg-[#B9C9EA] border-[#3C517A] border-opacity-30 active:rounded-none active:border-blue-900 rounded-none hover:border-[#3C517A]    transition duration-0 md:duration-150 "
+//             />
+//           </div>
+
+//           <div className="md:grid md:grid-cols-1">
+//             <label htmlFor="Subject">Subject</label>
+//             <input
+//               type="text"
+//               name="subject"
+//               id=""
+//               className="w-[250px] h-10 px-2 border-2  bg-[#B9C9EA] border-[#3C517A] border-opacity-30 active:rounded-none active:border-blue-900 rounded-none hover:border-[#3C517A]    transition duration-0 md:duration-150 "
+//             />
+//           </div>
+//         </div>
+//       </div>

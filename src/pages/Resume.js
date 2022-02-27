@@ -1,8 +1,9 @@
 import React from "react";
 import { education, Skills, workExperience } from "./resumeP";
+
 const Resume = () => {
   return (
-    <div className=" bg-[#B9C9EA] md:max-h-fit  font-oxygen  ">
+    <div className=" bg-[#B9C9EA] md:max-h-fit  font-oxygen arrows ">
       <h1 className="font-bold text-white text-4xl  md:text-6xl md:pl-44 md:py-16">
         Resume
       </h1>
@@ -10,9 +11,9 @@ const Resume = () => {
         <div className="md:grid md:grid-cols-2  ">
           <h1 className="font-bold md:pl-48 md:text-3xl ">Work Experience</h1>
           <ul className="grid grid-cols-1 gap-10 mt-6">
-            {workExperience.map((i) => {
+            {workExperience.map((i, index) => {
               return (
-                <li key={i} className="md:flex md:gap-10">
+                <li key={index} className="md:flex md:gap-10">
                   <div> {i.date}</div>
                   <div>
                     <div className="font-bold">{i.title}</div>
@@ -30,9 +31,9 @@ const Resume = () => {
         <div className="md:grid md:grid-cols-2  ">
           <h1 className="font-bold md:pl-48 md:text-3xl">Education</h1>
           <ul className="grid grid-cols-1 gap-10 mt-6">
-            {education.map((i) => {
+            {education.map((i, index) => {
               return (
-                <li key={i} className="md:flex md:gap-10">
+                <li key={index} className="md:flex md:gap-10">
                   <div> {i.date}</div>
                   <div>
                     <div className="font-bold">{i.title}</div>
@@ -50,14 +51,12 @@ const Resume = () => {
 
         <div className="md:grid md:grid-cols-2  ">
           <h1 className="font-bold md:pl-48 md:text-3xl">Skills & Expertise</h1>
-          <ul className="grid grid-cols-1 gap-10 mt-6">
-            {Skills.map((i) => {
+          <ul className="grid grid-cols-1 gap-10 mt-6  list-disc list-inside">
+            {Skills.map((i, index) => {
               return (
-                <li key={i} className="md:flex md:gap-10">
-                  <div> {i.date}</div>
-                  <div>
-                    <div className="font-bold">{i.title}</div>
-                    <div className="md:max-w-[400px]">{i.paragraph}</div>
+                <li key={index} className="md:flex md:gap-10">
+                  <div className="md:max-w-[400px]  md:mx-28">
+                    {i.paragraph}
                   </div>
                 </li>
               );

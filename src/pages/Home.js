@@ -1,8 +1,9 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import image from "./img/me.jpg";
 
 const Home = () => {
+  const Navigate = useNavigate();
   return (
     <div className=" bg-[#B9C9EA] md:h-[570px]  font-oxygen shapes-bg ">
       <div className=" grid grid-cols-1 gap-28 md:gap-10 justify-center md:flex md:justify-center  ">
@@ -31,30 +32,30 @@ const Home = () => {
             </p>
           </div>
           <div className="flex justify-center md:gap-5 bg-[#B9C9EA]">
-            <Link
-              to="/resume"
+            <span
+              onClick={() => Navigate("/resume")}
               className="rounded-full min-w-[100px] min-h-[100px] md:w-32 md:h-32  shadow-2xl transition duration-0 md:duration-300 text-gray-900 border-2 border-white  bg-red-500 hover:bg-transparent hover:border-gray-900 "
             >
               <button className="h-full w-full align-middle hover:text-gray-900 text-white ">
                 Resume
               </button>
-            </Link>
-            <Link
-              to="/project"
+            </span>
+            <span
+              onClick={() => Navigate("/project")}
               className="rounded-full min-w-[100px] min-h-[100px] md:w-32 md:h-32  shadow-2x transition duration-0 md:duration-300 text-gray-900 border-2 border-white  bg-blue-500 hover:bg-transparent  hover:border-gray-900  "
             >
               <button className="h-full w-full align-middle hover:text-gray-900 text-white">
                 Projects
               </button>
-            </Link>{" "}
-            <Link
-              to="/contact"
+            </span>{" "}
+            <span
+              onClick={() => Navigate("/contact")}
               className="rounded-full min-w-[100px] min-h-[100px] md:w-32 md:h-32 shadow-2xl transition duration-0 md:duration-300 text-gray-90 border-2 border-white  bg-yellow-500 hover:bg-transparent hover:border-gray-900 "
             >
               <button className="h-full w-full align-middle hover:text-gray-900 text-white">
                 Contact
               </button>
-            </Link>
+            </span>
           </div>
         </div>
       </div>

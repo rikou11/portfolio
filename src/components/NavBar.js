@@ -5,14 +5,14 @@ const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <div className="bg-[#B9C9EA] z-40 font-oxygen">
-      <div className="px-2 py-3 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-20 lg:px-4">
+    <div className="bg-[#B9C9EA] navbar font-oxygen">
+      <div className="px-2 py-3 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-20 lg:px-4 navbar">
         <div className="relative flex items-center justify-between">
           <Link
             to="/"
             aria-label="Company"
             title="Company"
-            className="inline-flex items-center"
+            className="inline-flex items-center "
           >
             <svg
               className="w-8 text-teal-accent-400"
@@ -36,10 +36,21 @@ const NavBar = () => {
           <ul className="flex items-center hidden space-x-8 lg:flex">
             <li>
               <Link
+                to="/"
+                aria-label="Our Resume"
+                title="Our Resume"
+                className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-[#9DABC7]"
+              >
+                Home
+              </Link>
+            </li>
+
+            <li>
+              <Link
                 to="/resume"
                 aria-label="Our Resume"
                 title="Our Resume"
-                className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
+                className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-[#9DABC7]"
               >
                 Resume
               </Link>
@@ -49,7 +60,7 @@ const NavBar = () => {
                 to="/project"
                 aria-label="Our Resume"
                 title="Our Resume"
-                className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
+                className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-[#9DABC7]"
               >
                 Projects
               </Link>
@@ -59,13 +70,13 @@ const NavBar = () => {
                 to="/contact"
                 aria-label="Resume Contact"
                 title="Resume Contact"
-                className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
+                className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-[#9DABC7]"
               >
                 Contact
               </Link>
             </li>
           </ul>
-          <div className="lg:hidden">
+          <div className="lg:hidden navbar">
             <button
               aria-label="Open Menu"
               title="Open Menu"
