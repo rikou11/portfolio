@@ -33,7 +33,7 @@ const NavBar = () => {
               Fares Bensaad <span className="font-thin text-base">Editor</span>
             </span>
           </Link>
-          <ul className="flex items-center  space-x-8 lg:flex">
+          <ul className="flex items-center hidden space-x-8 lg:flex">
             <li>
               <Link
                 to="/resume"

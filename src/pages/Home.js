@@ -21,8 +21,10 @@ const Home = () => {
             <h1 className="text-shadow font-bold text-5xl mt-10 md:text-8xl text-white ">
               Hello
             </h1>
-            <h2 className=" font-bold md:pl-10 text-4xl">A bit about me </h2>
-            <p className=" md:pl-10 text-lg w-[300px]">
+            <h2 className=" font-bold md:pl-10 text-4xl text-[#3C517A]">
+              A bit about me{" "}
+            </h2>
+            <p className=" md:pl-10 text-lg w-[300px] text-[#3C517A]">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ad
               in ipsum libero, laboriosam temporibus quos quam rem enim tempore
               commodi vel.
@@ -31,7 +33,7 @@ const Home = () => {
           <div className="flex justify-center md:gap-5 bg-[#B9C9EA]">
             <Link
               to="/resume"
-              className="rounded-full w-32 h-32  shadow-2xl transition duration-0 md:duration-300 text-gray-900 border-2 border-white  bg-red-500 hover:bg-transparent hover:border-gray-900 "
+              className="rounded-full min-w-[100px] min-h-[100px] md:w-32 md:h-32  shadow-2xl transition duration-0 md:duration-300 text-gray-900 border-2 border-white  bg-red-500 hover:bg-transparent hover:border-gray-900 "
             >
               <button className="h-full w-full align-middle hover:text-gray-900 text-white ">
                 Resume
@@ -39,7 +41,7 @@ const Home = () => {
             </Link>
             <Link
               to="/project"
-              className="rounded-full w-32 h-32  shadow-2x transition duration-0 md:duration-300 text-gray-900 border-2 border-white  bg-blue-500 hover:bg-transparent  hover:border-gray-900  "
+              className="rounded-full min-w-[100px] min-h-[100px] md:w-32 md:h-32  shadow-2x transition duration-0 md:duration-300 text-gray-900 border-2 border-white  bg-blue-500 hover:bg-transparent  hover:border-gray-900  "
             >
               <button className="h-full w-full align-middle hover:text-gray-900 text-white">
                 Projects
@@ -47,7 +49,7 @@ const Home = () => {
             </Link>{" "}
             <Link
               to="/contact"
-              className="rounded-full w-32 h-32 shadow-2xl transition duration-0 md:duration-300 text-gray-90 border-2 border-white  bg-yellow-500 hover:bg-transparent hover:border-gray-900 "
+              className="rounded-full min-w-[100px] min-h-[100px] md:w-32 md:h-32 shadow-2xl transition duration-0 md:duration-300 text-gray-90 border-2 border-white  bg-yellow-500 hover:bg-transparent hover:border-gray-900 "
             >
               <button className="h-full w-full align-middle hover:text-gray-900 text-white">
                 Contact

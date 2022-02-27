@@ -1,18 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
-
 import Home from "./pages/Home";
 import Project from "./pages/Project";
 import Resume from "./pages/Resume";
 import Contact from "./pages/Contact";
-import NavBar from "./components/NavBar";
-import Footer from "./components/Footer";
-import notFound from "./pages/notFound";
+import NotFound from "./pages/NotFound.js";
+import Layout from "./components/Layout";
+
 const App = () => {
+  // const [first] = useState(true);
   return (
     <BrowserRouter>
-      <NavBar />
+  <Layout>
 
       <Routes>
         <Route path="/" element={<Home />} />
@@ -20,11 +20,15 @@ const App = () => {
         <Route path="/project" element={<Project />} />
         <Route path="/resume" element={<Resume />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/notFound" element={<notFound />} />
+        <Route path="/404" element={<NotFound />} />
+        <Route  path='*'  element={<NotFound />} />
+{/* redirect  path that have a re   (optioneel ) to specific path that we want  */}
         <Route path="/re" element={<Navigate to="/404" />} />
+
+        {/* <Route  /> */}
       </Routes>
 
-      <Footer />
+      </Layout>
     </BrowserRouter>
   );
 };
