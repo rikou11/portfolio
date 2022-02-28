@@ -1,7 +1,20 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import tw from "tailwind-styled-components";
 
 const NotFound = () => {
+  const Container = tw.div`
+  flex
+  items-center
+  justify-center
+  flex-col
+  w-full
+  bg-indigo-600
+  text-white
+  hover:bg-yellow-400 
+  transition duration-300
+`;
+
   const navigate = useNavigate();
   return (
     <div className=" bg-[#B9C9EA] md:h-[570px]  font-oxygen  ">
@@ -19,7 +32,7 @@ const NotFound = () => {
               <p className="text-white md:text-xl text-center sm:text-left mb-8">
                 The page you’re looking for doesn’t exist.
               </p>
-
+              <Container>helloo</Container>
               <button
                 onClick={() => navigate("/")}
                 className=" w-32 h-32 rounded-full text-white border-2 shadow-2xl transition duration-0 md:duration-300 border-white hover:border-gray-900 inline-block bg-[#FA96AD] hover:bg-[#B9C9EA] focus-visible:ring ring-indigo-300  active:text-gray-700 text-sm md:text-base font-semibold text-center  outline-none  px-8 py-3"

@@ -2,7 +2,7 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <div className=" bg-[#B9C9EA]   font-oxygen map">
+    <form className=" bg-[#B9C9EA]   font-oxygen map" method="Post">
       <section className="text-gray-600 body-font relative">
         <div className="absolute inset-0 bg-gray-300  map">
           <iframe
@@ -55,7 +55,10 @@ const Contact = () => {
             </div>
             <div className="w-full flex justify-center">
               {" "}
-              <button className="rounded-full min-w-[100px] min-h-[100px] md:w-32 md:h-32 shadow-2xl transition duration-0 md:duration-300 text-gray-90 border-2 border-white  bg-blue-800 text-white text-lg font-bold hover:bg-transparent hover:border-gray-900 ">
+              <button
+                name="send"
+                className="rounded-full min-w-[100px] min-h-[100px] md:w-32 md:h-32 shadow-2xl transition duration-0 md:duration-300 text-gray-90 border-2 border-white  bg-blue-800 text-white text-lg font-bold hover:bg-transparent hover:border-gray-900 "
+              >
                 Send
               </button>
             </div>
@@ -67,7 +70,7 @@ const Contact = () => {
           </div>
         </div>
       </section>
-    </div>
+    </form>
   );
 };
 
