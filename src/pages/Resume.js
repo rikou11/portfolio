@@ -1,19 +1,32 @@
-import React from "react";
-import { education, Skills, workExperience } from "./resumeP";
+import React, { useEffect } from "react";
+import { education, Skills, workExperience } from "./content/resumeP";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Resume = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+  }, []);
+
   return (
     <div className=" bg-[#B9C9EA] md:max-h-fit  font-oxygen arrows ">
       <h1 className="font-bold text-white text-4xl  md:text-6xl md:pl-44 md:py-16">
         Resume
       </h1>
+
       <div className="text-[#3C517A]">
         <div className="md:grid md:grid-cols-2  ">
           <h1 className="font-bold md:pl-48 md:text-3xl ">Work Experience</h1>
           <ul className="grid grid-cols-1 gap-10 mt-6">
             {workExperience.map((i, index) => {
               return (
-                <li key={index} className="md:flex md:gap-10">
+                <li
+                  key={index}
+                  data-aos="fade-up"
+                  className="md:flex md:gap-10"
+                >
                   <div> {i.date}</div>
                   <div>
                     <div className="font-bold">{i.title}</div>
@@ -33,7 +46,11 @@ const Resume = () => {
           <ul className="grid grid-cols-1 gap-10 mt-6">
             {education.map((i, index) => {
               return (
-                <li key={index} className="md:flex md:gap-10">
+                <li
+                  key={index}
+                  data-aos="fade-up"
+                  className="md:flex md:gap-10"
+                >
                   <div> {i.date}</div>
                   <div>
                     <div className="font-bold">{i.title}</div>
@@ -51,10 +68,14 @@ const Resume = () => {
 
         <div className="md:grid md:grid-cols-2  ">
           <h1 className="font-bold md:pl-48 md:text-3xl">Skills & Expertise</h1>
-          <ul className="grid grid-cols-1 gap-10 mt-6  list-disc list-inside">
+          <ul className="grid grid-cols-1 gap-10 mt-6 marker:text-sky-400 list-disc ">
             {Skills.map((i, index) => {
               return (
-                <li key={index} className="md:flex md:gap-10">
+                <li
+                  key={index}
+                  data-aos="fade-up"
+                  className="md:flex md:gap-10"
+                >
                   <div className="md:max-w-[400px]  md:mx-28">
                     {i.paragraph}
                   </div>
