@@ -34,37 +34,40 @@ const Home = () => {
             <h2 className=" font-bold md:pl-10 text-4xl text-[#3C517A]">
               A bit about me{" "}
             </h2>
-            <p className=" md:pl-10 text-lg w-[300px] text-[#3C517A]">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ad
-              in ipsum libero, laboriosam temporibus quos quam rem enim tempore
-              commodi vel.
+            <p className=" md:pl-10 text-lg w-[450px] text-[#3C517A]">
+              Highly driven recent web and information system graduate. With a
+              flair for creating elegant solutions in the least amount of time.
+              Proven record of managing computer hardware repair at university.
+              Comes with successful freelance experience in Front-End & Back-End
+              Web development. Bringing deep knowledge of Digital Marketing and
+              Sales Software Proficiency.
             </p>
           </div>
-          <div className="flex justify-center md:gap-5 bg-[#B9C9EA]">
+          <div
+            data-aos="zoom-in"
+            className="flex justify-center md:gap-5 bg-transparent"
+          >
             <span
-              data-aos="zoom-in"
               onClick={() => Navigate("/resume")}
-              className="rounded-full min-w-[100px] min-h-[100px] md:w-32 md:h-32  shadow-2xl transition duration-0 md:duration-300 text-gray-900 border-2 border-white  bg-red-500 hover:bg-transparent hover:border-gray-900 "
+              className="rounded-full min-w-[100px] min-h-[100px] md:w-32 md:h-32  shadow-2xl transition duration-300 md:duration-300 text-gray-900 border-2 border-white  bg-red-500 hover:bg-transparent hover:border-gray-900  hover:border-dashed"
             >
-              <button className="h-full w-full align-middle hover:text-gray-900 text-white ">
+              <button className="h-full w-full  font-bold align-middle hover:text-gray-900 text-white text-center">
                 Resume
               </button>
             </span>
             <span
-              data-aos="zoom-in"
               onClick={() => Navigate("/project")}
-              className="rounded-full min-w-[100px] min-h-[100px] md:w-32 md:h-32  shadow-2x transition duration-0 md:duration-300 text-gray-900 border-2 border-white  bg-blue-500 hover:bg-transparent  hover:border-gray-900  "
+              className="rounded-full min-w-[100px] min-h-[100px] md:w-32 md:h-32  shadow-2x transition duration-300 md:duration-300 text-gray-900 border-2 border-white  bg-cyan-500 hover:bg-transparent  hover:border-gray-900   hover:border-dashed"
             >
-              <button className="h-full w-full align-middle hover:text-gray-900 text-white">
+              <button className="h-full w-full font-bold align-middle  hover:text-gray-900 text-white">
                 Projects
               </button>
             </span>{" "}
             <span
-              data-aos="zoom-in"
               onClick={() => Navigate("/contact")}
-              className="rounded-full min-w-[100px] min-h-[100px] md:w-32 md:h-32 shadow-2xl transition duration-0 md:duration-300 text-gray-90 border-2 border-white  bg-yellow-500 hover:bg-transparent hover:border-gray-900 "
+              className="rounded-full min-w-[100px] min-h-[100px] md:w-32 md:h-32 shadow-2xl transition duration-300 md:duration-300 text-gray-90 border-2 border-white  bg-yellow-500 hover:bg-transparent hover:border-gray-900  hover:border-dashed"
             >
-              <button className="h-full w-full align-middle hover:text-gray-900 text-white">
+              <button className="h-full  font-bold w-full align-middle hover:text-gray-900 text-white">
                 Contact
               </button>
             </span>

@@ -8,21 +8,21 @@ export const projects = [
     Description:
       " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde doloremque deserunt delenitiLorem ipsum dolor sit amet consectetur, adipisicing elit. Unde doloremque deserunt deleniti? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde doloremque deserunt deleniti?",
     PictureSRC:
-      "https://cdn.dribbble.com/users/1382369/screenshots/17607142/media/06f310aa91734e22c5acd45de49b69fd.png                      ",
+      "https://cdn.dribbble.com/users/25514/screenshots/16261258/media/bcfa3fb641bd527f5a88ccc561d1d4c8.png                     ",
 
     TechnologiesUsed: "PHP,...",
     DemoLink: "https://www.google.com",
   },
   {
     id: 2,
-    Title: "fares",
-    Societyname: "Hospital",
+    Title: "Personal project",
+    Societyname: "INFODZ",
     Minidescription:
       "   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde doloremque deserunt deleniti?",
     Description:
       " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde doloremque deserunt delenitiLorem ipsum dolor sit amet consectetur, adipisicing elit. Unde doloremque deserunt deleniti? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde doloremque deserunt deleniti?",
     PictureSRC:
-      "https://cdn.dribbble.com/users/1382369/screenshots/17447544/media/d0b62b705239031d52f1a1216d64a04b.png                              ",
+      "https://cdn.dribbble.com/users/1004297/screenshots/15102121/media/153ed4aeffba41ece78860b127b3a65b.png       ",
     TechnologiesUsed: "PHP,...",
     DemoLink: "https://www.google.com",
   },
@@ -35,7 +35,7 @@ export const projects = [
     Description:
       " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde doloremque deserunt delenitiLorem ipsum dolor sit amet consectetur, adipisicing elit. Unde doloremque deserunt deleniti? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde doloremque deserunt deleniti?",
     PictureSRC:
-      "https://cdn.dribbble.com/users/1382369/screenshots/17441428/media/e5212048b79794bde1f1b53e731a5454.png                           ",
+      "https://cdn.dribbble.com/users/4026036/screenshots/15091067/media/76b39ca7cf04c01fdac86a05dd91d6ee.png                         ",
     TechnologiesUsed: "PHP,...",
     DemoLink: "https://www.google.com",
   },

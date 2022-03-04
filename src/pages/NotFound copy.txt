@@ -1,24 +1,57 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-// import tw from "tailwind-styled-components";
-// import { getList } from "../services/list";
-import axios from "axios";
+import tw from "tailwind-styled-components";
+import { getList, setItem } from "../services/list";
+
 const NotFound = () => {
   const [Json, setJson] = useState([]);
-
+  const [itemInput, setItemInput] = useState("");
+  const [alert, setAlert] = useState(false);
+  let mounted = true;
   useEffect(() => {
     let mounted = true;
-
-    axios.get("http://localhost:3333/list").then((items) => {
+    if (Json.length && !alert) {
+      return;
+    }
+    getList().then((items) => {
       if (mounted) {
         console.log(items);
-        setJson(items.data);
+        setJson(items);
       }
     });
 
     return () => (mounted = false);
-  }, []);
 
+    // const url = "http://localhost:3333/list";
+    // const fetchData = async () => {
+    //   try {
+    //     const response = await fetch(url);
+    //     const json = await response.json();
+    //     console.log(json);
+    //     setJson(json.slip);
+    //   } catch (error) {
+    //     console.log("error", error);
+    //   }
+    // };
+    // fetchData();
+  }, [alert, Json]);
+
+  useEffect(() => {
+    if (alert) {
+      setTimeout(() => {
+        if (mounted) {
+          setAlert(false);
+        }
+      }, 1000);
+    }
+  }, [alert, mounted]);
+  function handleSubmit(e) {
+    e.preventDefault();
+    setItem(itemInput).then(() => {
+      setItemInput("");
+      setAlert(true);
+    });
+  }
   const navigate = useNavigate();
   return (
     <div className=" bg-[#B9C9EA] md:h-[570px]  font-oxygen  ">
@@ -36,7 +69,7 @@ const NotFound = () => {
               <p className="text-white md:text-xl text-center sm:text-left mb-8">
                 The page you’re looking for doesn’t exist.
               </p>
-              {/* <Container>
+              <Container>
                 {Json.map((i) => {
                   return (
                     <ul key={i.id}>
@@ -44,7 +77,19 @@ const NotFound = () => {
                     </ul>
                   );
                 })}
-              </Container> */}
+              </Container>
+              <form onSubmit={handleSubmit}>
+                {alert && <h2> Submit Successful</h2>}
+                <label>
+                  <p>New Item</p>
+                  <input
+                    type="text"
+                    onChange={(e) => setItemInput(e.target.value)}
+                    value={itemInput}
+                  />
+                </label>
+                <button type="submit">Submit</button>
+              </form>
 
               <button
                 onClick={() => navigate("/")}
@@ -72,14 +117,14 @@ const NotFound = () => {
 export default NotFound;
 
 // eslint-disable-next-line no-unused-vars
-// const Container = tw.div`
-//   flex
-//   items-center
-//   justify-center
-//   flex-col
-//   w-full
-//   bg-indigo-600
-//   text-white
-//   hover:bg-yellow-400
-//   transition duration-300
-// `;
+const Container = tw.div`
+  flex
+  items-center
+  justify-center
+  flex-col
+  w-full
+  bg-indigo-600
+  text-white
+  hover:bg-yellow-400 
+  transition duration-300
+`;

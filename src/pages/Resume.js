@@ -11,14 +11,18 @@ const Resume = () => {
   }, []);
 
   return (
-    <div className=" bg-[#B9C9EA] md:max-h-fit  font-oxygen arrows ">
+    <div className=" bg-[#B9C9EA] md:max-h-fit px-14 md:px-0  font-oxygen arrows ">
       <h1 className="font-bold text-white text-4xl  md:text-6xl md:pl-44 md:py-16">
         Resume
       </h1>
 
-      <div className="text-[#3C517A]">
-        <div className="md:grid md:grid-cols-2  ">
-          <h1 className="font-bold md:pl-48 md:text-3xl ">Work Experience</h1>
+      <div className="text-[#3C517A] px-[20px] md:px-0">
+        {/* md:grid md:grid-cols-2 */}
+        <div className="   md:flex">
+          {" "}
+          <h1 className="font-bold md:pl-40 md:text-3xl  md:w-[600px] ">
+            Work Experience
+          </h1>
           <ul className="grid grid-cols-1 gap-10 mt-6">
             {workExperience.map((i, index) => {
               return (
@@ -27,9 +31,12 @@ const Resume = () => {
                   data-aos="fade-up"
                   className="md:flex md:gap-10"
                 >
-                  <div> {i.date}</div>
+                  <div className="font-bold"> {i.date}</div>
                   <div>
                     <div className="font-bold">{i.title}</div>
+                    <div className="font-semibold text-xs text-blue-50 pb-3">
+                      {i.discription}
+                    </div>
                     <div className="md:max-w-[400px]">{i.paragraph}</div>
                   </div>
                 </li>
@@ -41,9 +48,11 @@ const Resume = () => {
           <div className="border-t-2 border-[] flex justify-center items-center min-w-[500px] md:w-[1200px] my-4"></div>
         </div>
 
-        <div className="md:grid md:grid-cols-2  ">
-          <h1 className="font-bold md:pl-48 md:text-3xl">Education</h1>
-          <ul className="grid grid-cols-1 gap-10 mt-6">
+        <div className="md:flex">
+          <h1 className="font-bold md:pl-48 md:text-3xl  md:w-[600px]">
+            Education
+          </h1>
+          <ul className="grid grid-cols-1 gap-10 mt-6 ">
             {education.map((i, index) => {
               return (
                 <li
@@ -51,9 +60,9 @@ const Resume = () => {
                   data-aos="fade-up"
                   className="md:flex md:gap-10"
                 >
-                  <div> {i.date}</div>
+                  <div className="font-bold"> {i.date}</div>
                   <div>
-                    <div className="font-bold">{i.title}</div>
+                    <div className="font-bold pb-3">{i.title}</div>
                     <div className="md:max-w-[400px]">{i.paragraph}</div>
                   </div>
                 </li>

@@ -2,32 +2,35 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="bg-[#B9C9EA]">
+    <div className="bg-[#B9C9EA] shapes">
       <footer className="text-gray-600 body-font ">
         <div className="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
           <a
             href="#_"
-            className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900"
+            className="flex title-font font-medium items-center md:justify-start justify-center text-blue-900"
           >
             <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              stroke="currentColor"
-              strokeLinecap="round"
+              className="w-8 text-teal-accent-400"
+              viewBox="0 0 24 24"
               strokeLinejoin="round"
               strokeWidth="2"
-              className="w-10 h-10 text-white p-2 bg-gray-900 rounded-full"
-              viewBox="0 0 24 24"
+              strokeLinecap="round"
+              strokeMiterlimit="10"
+              stroke="currentColor"
+              fill="none"
             >
-              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+              <rect x="3" y="1" width="7" height="12" />
+              <rect x="3" y="17" width="7" height="6" />
+              <rect x="14" y="1" width="7" height="6" />
+              <rect x="14" y="11" width="7" height="12" />
             </svg>
-            <span className="ml-3 text-xl">Bensaad Fares</span>
+            <span className="ml-3 text-xl text-[#3C517A]">Bensaad Fares</span>
           </a>
-          <p className="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">
+          <p className="text-sm  text-[#3C517A] sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">
             © 2022 —
             <a
-              href="https://twitter.com/knyttneve"
-              className="text-gray-600 ml-1"
+              href="https://www.instagram.com/thatkidfares/?hl=en"
+              className="text-[#3C517A] ml-1"
               rel="noopener noreferrer"
               target="_blank"
             >
@@ -35,7 +38,10 @@ const Footer = () => {
             </a>
           </p>
           <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
-            <a href="#_" className="text-gray-500">
+            <a
+              href="https://www.facebook.com/fares.bensaad.dz/"
+              className="text-[#3C517A]"
+            >
               <svg
                 fill="currentColor"
                 strokeLinecap="round"
@@ -47,7 +53,7 @@ const Footer = () => {
                 <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
               </svg>
             </a>
-            <a href="#_" className="ml-3 text-gray-500">
+            <a href="#_" className="ml-3 text-[#3C517A]">
               <svg
                 fill="currentColor"
                 strokeLinecap="round"
@@ -59,7 +65,10 @@ const Footer = () => {
                 <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
               </svg>
             </a>
-            <a href="#_" className="ml-3 text-gray-500">
+            <a
+              href="https://www.instagram.com/thatkidfares/?hl=en"
+              className="ml-3 text-[#3C517A]"
+            >
               <svg
                 fill="none"
                 stroke="currentColor"
@@ -73,7 +82,10 @@ const Footer = () => {
                 <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
               </svg>
             </a>
-            <a href="#_" className="ml-3 text-gray-500">
+            <a
+              href="https://www.linkedin.com/in/fares-bensaad-252aa9226/"
+              className="ml-3 text-[#3C517A]"
+            >
               <svg
                 fill="currentColor"
                 stroke="currentColor"
