@@ -57,13 +57,13 @@ const Contact = () => {
               {" "}
               <button
                 name="send"
-                className="rounded-full min-w-[100px] min-h-[100px] md:w-32 md:h-32 shadow-2xl transition duration-0 md:duration-300 text-gray-90 border-2 border-white  bg-blue-800 text-white text-lg font-bold hover:bg-transparent hover:border-gray-900 "
+                className="rounded-full hover:border-dashed min-w-[100px] min-h-[100px] md:w-32 md:h-32 shadow-2xl transition duration-0 md:duration-300 text-gray-90 border-2 border-white  bg-blue-800 text-white text-lg font-bold hover:bg-transparent hover:border-gray-900 "
               >
                 Send
               </button>
             </div>
 
-            <p className="text-xs text-gray-500 mt-3">
+            <p className="text-xs text-[#3C517A] mt-3">
               Chicharrones blog helvetica normcore iceland tousled brook viral
               artisan.
             </p>

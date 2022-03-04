@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-import cv from "../files/cv.txt";
+import cv from "../files/fares bensaad cv .pdf";
 const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -145,7 +145,7 @@ const NavBar = () => {
             <li>
               <a
                 href={cv}
-                download="cv.txt"
+                download="fares bensaad cv .pdf"
                 aria-label="Resume Contact"
                 title="Resume Contact"
                 className="font-bold tracking-wide flex shadow-2xl text-blue-700 text-sm rounded-full py-2 px-3 border-dashed border-2 border-blue-900 hover:border-separate hover:border-white hover:bg-blue-900 hover:text-white   bg-slate-50 transition-colors duration-200 "
