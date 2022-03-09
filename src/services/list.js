@@ -1,5 +1,7 @@
 export function getList() {
-  return fetch("http://localhost:3333/list").then((data) => data.json());
+  return fetch("http://localhost/portfolio/connection.php").then((data) =>
+    data.json()
+  );
 }
 
 export function setItem(item) {

@@ -8,17 +8,34 @@ const NotFound = () => {
 
   useEffect(() => {
     let mounted = true;
+    setTimeout(() => {
+      axios.get("http://localhost/portfolio/getPosts.php").then((res) => {
+        if (mounted) {
+          setJson(res.data);
+          console.log(Json);
+        }
+      });
 
-    axios.get("http://localhost:3333/list").then((items) => {
-      if (mounted) {
-        console.log(items);
-        setJson(items.data);
-      }
+      return () => (mounted = false);
+    }, 3000);
+
+    // axios.post("http://localhost/portfolio/postdb.php/?", {
+    //   title: "jessie",
+    //   body: "12:00",
+    //   author: "milk",
+    // });
+  }, [Json]);
+
+  const createPost = () => {
+    axios({
+      method: "post",
+      url: "http://localhost/portfolio/postPosts.php?",
+      data: { title: "hello", author: "hwjwj", body: "asas" },
+    }).then((response) => {
+      console.log("Status: ", response.status);
+      console.log("Data: ", response.data);
     });
-
-    return () => (mounted = false);
-  }, []);
-
+  };
   const navigate = useNavigate();
   return (
     <div className=" bg-[#B9C9EA] md:h-[570px]  font-oxygen  ">
@@ -36,16 +53,19 @@ const NotFound = () => {
               <p className="text-white md:text-xl text-center sm:text-left mb-8">
                 The page you’re looking for doesn’t exist.
               </p>
-              {/* <Container>
+              <div>
                 {Json.map((i) => {
                   return (
                     <ul key={i.id}>
-                      <li>{i.item}</li>
+                      <li>{i.author}</li>
                     </ul>
                   );
                 })}
-              </Container> */}
+              </div>
 
+              <button className=" bg-[#FA96AD]" onClick={() => createPost()}>
+                post
+              </button>
               <button
                 onClick={() => navigate("/")}
                 className=" w-32 h-32 rounded-full text-white border-2 shadow-2xl transition duration-0 md:duration-300 border-white hover:border-gray-900 inline-block bg-[#FA96AD] hover:bg-[#B9C9EA] focus-visible:ring ring-indigo-300  active:text-gray-700 text-sm md:text-base font-semibold text-center  outline-none  px-8 py-3"
