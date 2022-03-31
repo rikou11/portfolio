@@ -57,7 +57,7 @@ const Home = () => {
             </span>
             <span
               onClick={() => Navigate("/project")}
-              className="rounded-full min-w-[100px] min-h-[100px] md:w-32 md:h-32  shadow-2x transition duration-300 md:duration-300 text-gray-900 border-2 border-white  bg-cyan-500 hover:bg-transparent  hover:border-gray-900   hover:border-dashed"
+              className="rounded-full min-w-[101px] min-h-[100px] md:w-32 md:h-32  shadow-2x transition duration-300 md:duration-300 text-gray-900 border-2 border-white  bg-cyan-500 hover:bg-transparent  hover:border-gray-900   hover:border-dashed"
             >
               <button className="h-full w-full font-bold align-middle  hover:text-gray-900 text-white">
                 Projects
