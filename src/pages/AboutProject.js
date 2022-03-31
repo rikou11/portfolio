@@ -11,11 +11,11 @@ const AboutProject = ({ setDisplay }) => {
       </h2>
 
       <p className="text-[#3C517A] sm:text-lg mb-6 md:mb-8">
-        This is a section of some simple filler text, also known as placeholder
-        text. It shares some characteristics of a real written text but is
-        random or otherwise generated. It may be used to display a sample of
-        fonts or generate text for testing. Filler text is dummy text which has
-        no meaning however looks very similar to real text.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur,
+        in a neque atque saepe rem qui obcaecati vel eligendi reprehenderit ex
+        omnis id. Quibusdam nemo tempora, alias, voluptates voluptatum fugit
+        doloremque dolorem modi odit quisquam beatae est magni, necessitatibus
+        ut.
       </p>
 
       <div className="flex justify-center max-w-full  ">

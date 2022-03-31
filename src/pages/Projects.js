@@ -11,9 +11,9 @@ const Project = () => {
           </h2>
 
           <p className="max-w-screen-md text-gray-500 md:text-lg text-center mx-auto">
-            This is a section of some simple filler text, also known as
-            placeholder text. It shares some characteristics of a real written
-            text but is random or otherwise generated.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
+            rerum quibusdam earum, nostrum placeat nihil iusto similique iste
+            harum eum mollitia numquam eius!
           </p>
 
           <div className="grid grid-cols-1 my-10  md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 xl:gap-8">
