@@ -27,14 +27,14 @@ const Home = () => {
         </div>
 
         <div className="grid grid-cols-1 gap-10  ">
-          <div className="grid justify-center">
+          <div className="grid justify-center p-4 ">
             <h1 className="text-shadow font-bold text-5xl mt-10 md:text-8xl text-white ">
               Hello
             </h1>
             <h2 className=" font-bold md:pl-10 text-4xl text-[#3C517A]">
               A bit about me{" "}
             </h2>
-            <p className=" md:pl-10 text-lg w-[450px] text-[#3C517A]">
+            <p className="pl-15 md:pl-10 text-lg w:[300px]  md:w-[450px] text-[#3C517A]">
               Highly driven recent web and information system graduate. With a
               flair for creating elegant solutions in the least amount of time.
               Proven record of managing computer hardware repair at university.
