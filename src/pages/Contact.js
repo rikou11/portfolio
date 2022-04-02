@@ -1,8 +1,32 @@
-import React from "react";
-
+import React, { useState } from "react";
+import axios from "axios";
+import loading from "./img/Pulse-1s-130px.svg";
 const Contact = () => {
+  const [message, setMessage] = useState("");
+  const [email, setEmail] = useState("");
+  const [wait, setWait] = useState(false);
+  const [buttonsend, setButtonsend] = useState(true);
+  const [checkMark, setcheckMark] = useState(false);
+  const sendMail = () => {
+    setWait(true);
+    setButtonsend(false);
+    setTimeout(() => {
+      axios.post("http://localhost:3001/api/sendmail", {
+        message: message,
+        email: email,
+      });
+      setWait(false);
+      setcheckMark(true);
+      setTimeout(() => {
+        setcheckMark(false);
+        setButtonsend(true);
+        setEmail("");
+        setMessage("");
+      }, 2000);
+    }, 3000);
+  };
   return (
-    <form className=" bg-[#B9C9EA]   font-oxygen map" method="Post">
+    <div className=" bg-[#B9C9EA]   font-oxygen map">
       <section className="text-gray-600 body-font relative">
         <div className="absolute inset-0 bg-gray-300  map">
           <iframe
@@ -37,6 +61,8 @@ const Contact = () => {
                 type="email"
                 id="email"
                 name="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
                 className="w-full bg-white rounded border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-[#3C517A]text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out  hover:border-2 hover:border-[#3C517A] "
               />
             </div>
@@ -50,17 +76,48 @@ const Contact = () => {
               <textarea
                 id="message"
                 name="message"
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
                 className="w-full bg-white rounded border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-[#3C517A]h-20 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out hover:border-2 hover:border-[#3C517A] "
               ></textarea>
             </div>
             <div className="w-full flex justify-center">
-              {" "}
-              <button
-                name="send"
-                className="rounded-full hover:border-dashed min-w-[100px] min-h-[100px] md:w-32 md:h-32 shadow-2xl transition duration-0 md:duration-300 text-gray-90 border-2 border-white  bg-blue-800 text-white text-lg font-bold hover:bg-transparent hover:border-gray-900 "
-              >
-                Send
-              </button>
+              {wait && (
+                <div className="text-3xl">
+                  <img className="h-36" src={loading} alt="" />
+                </div>
+              )}
+              {checkMark && (
+                <div>
+                  <svg
+                    class="checkmark"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 52 52"
+                  >
+                    <circle
+                      class="checkmark__circle"
+                      cx="26"
+                      cy="26"
+                      r="25"
+                      fill="none"
+                    />
+                    <path
+                      class="checkmark__check"
+                      fill="none"
+                      d="M14.1 27.2l7.1 7.2 16.7-16.8"
+                    />
+                  </svg>
+                </div>
+              )}
+              {buttonsend && (
+                <button
+                  name="send"
+                  onClick={sendMail}
+                  className="rounded-full hover:border-dashed min-w-[100px] min-h-[100px] md:w-32 md:h-32 shadow-2xl transition duration-0 md:duration-300 text-gray-90 border-2 border-white  bg-blue-800 text-white text-lg font-bold hover:bg-transparent hover:border-gray-900 "
+                >
+                  Send
+                </button>
+              )}
             </div>
 
             <p className="text-xs text-[#3C517A] mt-3">
@@ -70,7 +127,7 @@ const Contact = () => {
           </div>
         </div>
       </section>
-    </form>
+    </div>
   );
 };
 

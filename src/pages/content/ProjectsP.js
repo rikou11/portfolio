@@ -7,7 +7,7 @@ export const projects = [
       "   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde doloremque deserunt deleniti?",
     Description:
       " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde doloremque deserunt delenitiLorem ipsum dolor sit amet consectetur, adipisicing elit. Unde doloremque deserunt deleniti? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde doloremque deserunt deleniti?",
-    PictureSRC: "https://dummyimage.com/600x400/3c517a/fff.png               ",
+    PictureSRC: "https://dummyimage.com/600x400/3c517a/fff.png",
 
     TechnologiesUsed: "PHP,...",
     DemoLink: "https://www.google.com",

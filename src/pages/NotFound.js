@@ -2,40 +2,40 @@ import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 // import tw from "tailwind-styled-components";
 // import { getList } from "../services/list";
-import axios from "axios";
+// import axios from "axios";
 const NotFound = () => {
-  const [Json, setJson] = useState([]);
+  // const [Json, setJson] = useState([]);
 
-  useEffect(() => {
-    let mounted = true;
-    setTimeout(() => {
-      axios.get("http://localhost/portfolio/getPosts.php").then((res) => {
-        if (mounted) {
-          setJson(res.data);
-          console.log(Json);
-        }
-      });
+  // useEffect(() => {
+  //   let mounted = true;
+  //   setTimeout(() => {
+  //     axios.get("http://localhost/portfolio/getPosts.php").then((res) => {
+  //       if (mounted) {
+  //         setJson(res.data);
+  //         console.log(Json);
+  //       }
+  //     });
 
-      return () => (mounted = false);
-    }, 3000);
+  //     return () => (mounted = false);
+  //   }, 3000);
 
-    // axios.post("http://localhost/portfolio/postdb.php/?", {
-    //   title: "jessie",
-    //   body: "12:00",
-    //   author: "milk",
-    // });
-  }, [Json]);
+  //   // axios.post("http://localhost/portfolio/postdb.php/?", {
+  //   //   title: "jessie",
+  //   //   body: "12:00",
+  //   //   author: "milk",
+  //   // });
+  // }, [Json]);
 
-  const createPost = () => {
-    axios({
-      method: "post",
-      url: "http://localhost/portfolio/postPosts.php?",
-      data: { title: "hello", author: "hwjwj", body: "asas" },
-    }).then((response) => {
-      console.log("Status: ", response.status);
-      console.log("Data: ", response.data);
-    });
-  };
+  // const createPost = () => {
+  //   axios({
+  //     method: "post",
+  //     url: "http://localhost/portfolio/postPosts.php?",
+  //     data: { title: "hello", author: "hwjwj", body: "asas" },
+  //   }).then((response) => {
+  //     console.log("Status: ", response.status);
+  //     console.log("Data: ", response.data);
+  //   });
+  // };
   const navigate = useNavigate();
   return (
     <div className=" bg-[#B9C9EA] md:h-[570px]  font-oxygen  ">
@@ -53,7 +53,7 @@ const NotFound = () => {
               <p className="text-white md:text-xl text-center sm:text-left mb-8">
                 The page you’re looking for doesn’t exist.
               </p>
-              <div>
+              {/* <div>
                 {Json.map((i) => {
                   return (
                     <ul key={i.id}>
@@ -65,7 +65,7 @@ const NotFound = () => {
 
               <button className=" bg-[#FA96AD]" onClick={() => createPost()}>
                 post
-              </button>
+              </button> */}
               <button
                 onClick={() => navigate("/")}
                 className=" w-32 h-32 rounded-full text-white border-2 shadow-2xl transition duration-0 md:duration-300 border-white hover:border-gray-900 inline-block bg-[#FA96AD] hover:bg-[#B9C9EA] focus-visible:ring ring-indigo-300  active:text-gray-700 text-sm md:text-base font-semibold text-center  outline-none  px-8 py-3"
