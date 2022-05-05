@@ -38,8 +38,8 @@ const Home = () => {
               Highly driven recent web and information system graduate. With a
               flair for creating elegant solutions in the least amount of time.
               Proven record of managing computer hardware repair at university.
-              Comes with successful freelance experience in Front-End & Back-End
-              Web development. Bringing deep knowledge of Digital Marketing and
+              Comes with successful experience in Front-End & Back-End Web
+              development. Bringing deep knowledge of Digital Marketing and
               Sales Software Proficiency.
             </p>
           </div>
