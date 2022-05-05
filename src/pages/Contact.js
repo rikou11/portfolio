@@ -1,21 +1,57 @@
 import React, { useState } from "react";
-import axios from "axios";
+// import axios from "axios";
 import loading from "./img/Pulse-1s-130px.svg";
+import emailjs from "emailjs-com";
+import { useRef } from "react";
+
 // className
 const Contact = () => {
+  const form = useRef();
+
   const [message, setMessage] = useState("");
   const [email, setEmail] = useState("");
   const [wait, setWait] = useState(false);
   const [buttonsend, setButtonsend] = useState(true);
   const [checkMark, setcheckMark] = useState(false);
-  const sendMail = () => {
+  // const sendMail = () => {
+  //   setWait(true);
+  //   setButtonsend(false);
+  //   setTimeout(() => {
+  //     axios.post("https://expressmail12.herokuapp.com/", {
+  //       message: message,
+  //       email: email,
+  //     });
+  //     setWait(false);
+  //     setcheckMark(true);
+  //     setTimeout(() => {
+  //       setcheckMark(false);
+  //       setButtonsend(true);
+  //       setEmail("");
+  //       setMessage("");
+  //     }, 2000);
+  //   }, 3000);
+  // };
+  const sendMail = (e) => {
+    e.preventDefault();
+
     setWait(true);
     setButtonsend(false);
     setTimeout(() => {
-      axios.post("https://expressmail12.herokuapp.com/", {
-        message: message,
-        email: email,
-      });
+      emailjs
+        .sendForm(
+          "service_pkro8ap",
+          "template_lqcqp18",
+          form.current,
+          "gqVXTZzBFvxnJNmwo"
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
       setWait(false);
       setcheckMark(true);
       setTimeout(() => {
@@ -26,6 +62,7 @@ const Contact = () => {
       }, 2000);
     }, 3000);
   };
+
   return (
     <div className=" bg-[#B9C9EA]   font-oxygen map">
       <section className="text-gray-600 body-font relative">
@@ -44,7 +81,11 @@ const Contact = () => {
         </div>
 
         <div className="container px-5 py-24 mx-auto flex shadow-2xl">
-          <div className="lg:w-1/3 md:w-1/2 bg-[#B9C9EA]  rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0 relative z-10 shadow-md">
+          <form
+            ref={form}
+            onSubmit={sendMail}
+            className="lg:w-1/3 md:w-1/2 bg-[#B9C9EA]  rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0 relative z-10 shadow-md"
+          >
             <h2 className="text-white text-2xl font-bold mb-1 title-font">
               Contact
             </h2>
@@ -125,7 +166,7 @@ const Contact = () => {
               Chicharrones blog helvetica normcore iceland tousled brook viral
               artisan.
             </p>
-          </div>
+          </form>
         </div>
       </section>
     </div>
