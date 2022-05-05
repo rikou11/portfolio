@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import loading from "./img/Pulse-1s-130px.svg";
+// className
 const Contact = () => {
   const [message, setMessage] = useState("");
   const [email, setEmail] = useState("");
@@ -11,7 +12,7 @@ const Contact = () => {
     setWait(true);
     setButtonsend(false);
     setTimeout(() => {
-      axios.post("http://localhost:3001/api/sendmail", {
+      axios.post("https://expressmail12.herokuapp.com/", {
         message: message,
         email: email,
       });
