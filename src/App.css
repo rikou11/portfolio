@@ -3,7 +3,23 @@
 }
 .shapes-bg {
   background-image: url("./pages/img/me.svg");
-  background-size: cover;
+  /* background-size: cover; */
+  background-size: screan;
+  /* animation: moveIt 15s linear infinite; */
+  animation: mymove 15s infinite;
+}
+@keyframes mymove {
+  50% {
+    background-position: center;
+  }
+}
+@keyframes moveIt {
+  from {
+    background-position: bottom left;
+  }
+  to {
+    background-position: top right;
+  }
 }
 .map {
   z-index: 0;
@@ -15,8 +31,9 @@
 .arrows {
   background-image: url("./pages/img/Group\ 2.svg");
   background-size: auto;
-  background-size: 300px;
+  background-size: screan;
 
+  animation: moveIt 15s linear infinite;
   background-position: left;
   background-repeat: no-repeat;
 }

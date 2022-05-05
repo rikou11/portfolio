@@ -7,7 +7,7 @@ import "aos/dist/aos.css";
 const Home = () => {
   useEffect(() => {
     AOS.init({
-      duration: 500,
+      duration: 600,
     });
   }, []);
 
@@ -28,13 +28,28 @@ const Home = () => {
 
         <div className="grid grid-cols-1 gap-10  ">
           <div className="grid justify-center p-4 ">
-            <h1 className="text-shadow font-bold text-5xl mt-10 md:text-8xl text-white ">
+            <h1
+              className="text-shadow font-bold text-5xl mt-10 md:text-8xl text-white "
+              data-aos="fade-right"
+              data-aos-offset="600"
+              data-aos-easing="ease-in-sine"
+            >
               Hello
             </h1>
-            <h2 className=" font-bold md:pl-10 text-4xl text-[#3C517A]">
+            <h2
+              data-aos="fade-right"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+              className=" font-bold md:pl-10 text-4xl text-[#3C517A]"
+            >
               A bit about me{" "}
             </h2>
-            <p className="pl-15 md:pl-10 text-lg w:[300px]  md:w-[450px] text-[#3C517A]">
+            <p
+              data-aos="fade-right"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+              className="pl-15 md:pl-10 text-lg w:[300px]  md:w-[450px] text-[#3C517A]"
+            >
               Highly driven recent web and information system graduate. With a
               flair for creating elegant solutions in the least amount of time.
               Proven record of managing computer hardware repair at university.
