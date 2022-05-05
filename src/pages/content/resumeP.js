@@ -1,5 +1,13 @@
 export const workExperience = [
   {
+    id: 3,
+    title: "WEB DEVELOPER ",
+    discription: "INFODZ / Mila, Algeria ",
+    date: "MAY 2021 – MAR 2022",
+    paragraph:
+      "•reated built a full affiliate marketing web app for store management software. With proficient Frontend  (HTML5, CSS3, JavaScript, jQuery, Ajax, React.Js) and Backend development (PHP, MySQL). The application manages customer orders and the company’s affiliated sellers.•	Fixed bugs from existing websites and implemented enhancements that significantly improved web functionality and speed.Collaborated with VP of sales to create digital marketing designs that led to an average 30+ additional clients per month. •	Created responsive web pages and dashboard for admin and resellers   •	Build reusable code and components for future use.",
+  },
+  {
     id: 1,
     title: "GRADUATION & VOLUNTEER PROJECTS ",
     discription: "ABDELHAMID MEHRI University, Constantine, Algeria ",
@@ -15,22 +23,14 @@ export const workExperience = [
     paragraph:
       "•	Maintained customer’s computer systems and peripherals by installing, configuring, testing, troubleshooting, and repairing hardware. •	Provided in-store assistance to customers, browsing inventory and checking out items.",
   },
-  {
-    id: 3,
-    title: "FREELANCE WEB DEVELOPER ",
-    discription: "INFODZ Website / Algiers, Algeria ",
-    date: "NOV 2021 - DEC 2021",
-    paragraph:
-      "•	Successfully built a full affiliate marketing web app of store management software. With proficient Front-End and Back-End development. The application manages customer orders and the company’s affiliated sellers. •	Created responsive web pages and dashboard for admin and resellers ",
-  },
-  {
-    id: 4,
-    title: "FREELANCE WEB DEVELOPER ",
-    discription: "INFODZ Website / Belabess, Algeria ",
-    date: "DEC 2021 - JAN 2022",
-    paragraph:
-      "-	Led and managed a team of 12 developers and designers to create efficient, effective and visually aesthetic an e-commerce website of drugstore management software.-	Oversaw concept mock-up and wireframe design to further client’s satisfaction by 30%. -	Developed customer-specific design framework, reducing site production time by 4 days.-	Collaborated with VP of sales to create digital marketing designs that led to an average 30+ additional clients per month. ",
-  },
+  // {
+  //   id: 3,
+  //   title: "FREELANCE WEB DEVELOPER ",
+  //   discription: "INFODZ Website / Algiers, Algeria ",
+  //   date: "NOV 2021 - DEC 2021",
+  //   paragraph:
+  //     "•	Successfully built a full affiliate marketing web app of store management software. With proficient Front-End and Back-End development. The application manages customer orders and the company’s affiliated sellers. •	Created responsive web pages and dashboard for admin and resellers ",
+  // },
 ];
 
 export const education = [

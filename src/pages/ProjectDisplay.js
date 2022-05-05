@@ -39,7 +39,7 @@ const ProjectId = () => {
 
             <div className="md:pt-8 text-[#3C517A]">
               <p className="text-indigo-500 font-bold text-center md:text-left ">
-                Who we are
+                what's
               </p>
 
               <h1 className="text-[#3C517A] text-2xl sm:text-3xl font-bold text-center md:text-left mb-4 md:mb-6">

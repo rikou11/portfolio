@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-import cv from "../files/fares bensaad cv .pdf";
+import cv from "../files/Bensaad-Fares Resume.pdf";
 const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 

@@ -29,13 +29,16 @@ const Project = () => {
                     />
                     <div className="bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50 absolute inset-0 pointer-events-none"></div>
 
-                    <span className="inline-block text-gray-200 text-xs md:text-sm border border-gray-500 rounded-lg backdrop-blur hover:bg-gray-300 transition duration-300 ease-in-out relative px-2 md:px-3 py-1 mr-3 mb-3">
+                    <a
+                      href={i.DemoLink}
+                      className="inline-block text-gray-200 text-xs md:text-sm border border-gray-500 rounded-lg backdrop-blur hover:bg-gray-300 transition duration-300 ease-in-out relative px-2 md:px-3 py-1 mr-3 mb-3"
+                    >
                       <img
                         src="https://img.icons8.com/stickers/100/000000/visible.png"
                         alt=""
                         className="h-8"
                       />
-                    </span>
+                    </a>
                   </span>
                   <h1 className="text-2xl pt-4 font-bold ">{i.Title}</h1>
                   <p>{i.Minidescription}</p>
