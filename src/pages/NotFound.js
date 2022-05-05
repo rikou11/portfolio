@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { useNavigate } from "react-router-dom";
 // import tw from "tailwind-styled-components";
 // import { getList } from "../services/list";
