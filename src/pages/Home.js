@@ -28,7 +28,9 @@ const Home = () => {
 
         <div className="grid grid-cols-1 gap-10  ">
           <div className="grid justify-center p-4 ">
-            <h1 data-aos-easing="ease-in-sine">Hello</h1>
+            <h1 className="text-shadow font-bold text-5xl mt-10 md:text-8xl text-white ">
+              Hello
+            </h1>
             <h2 className=" font-bold md:pl-10 text-4xl text-[#3C517A]">
               A bit about me{" "}
             </h2>
@@ -48,7 +50,7 @@ const Home = () => {
           </div>
           <div
             data-aos="zoom-in"
-            className="flex justify-center gap-2  md:gap-5 bg-transparent"
+            className="flex justify-center gap-2 md:gap-5 bg-transparent"
           >
             <span
               onClick={() => Navigate("/resume")}
