@@ -36,12 +36,7 @@ const Home = () => {
             >
               Hello
             </h1>
-            <h2
-              data-aos="fade-right"
-              data-aos-offset="300"
-              data-aos-easing="ease-in-sine"
-              className=" font-bold md:pl-10 text-4xl text-[#3C517A]"
-            >
+            <h2 className=" font-bold md:pl-10 text-4xl text-[#3C517A]">
               A bit about me{" "}
             </h2>
             <p
