@@ -38,7 +38,7 @@ const HeroSection = () => {
                 <div className="flex justify-center relative top-8   ">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-20 w-20 bg-yellow-400 text-white shadow-lg shadow-yellow-300 rounded-full p-4 "
+                    className="h-20 w-20 bg-gradient-to-tr from-yellow-400 to-yellow-200 text-white shadow-lg shadow-yellow-200 rounded-full p-4 "
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -73,7 +73,7 @@ const HeroSection = () => {
                 <div className="flex justify-center relative top-8   ">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-20 w-20 bg-blue-400 text-white shadow-lg shadow-blue-300 rounded-full p-4 "
+                    className="h-20 w-20 bg-gradient-to-tr from-blue-400 to-blue-200  text-white shadow-lg shadow-blue-300 rounded-full p-4 "
                     viewBox="0 0 20 20"
                     fill="currentColor"
                   >
@@ -100,11 +100,11 @@ const HeroSection = () => {
             </div>
             {/* card 3 */}
             <div className="grid-cols-1 grid gap-14">
-              <div className="grid grid-cols-1  w-[250px] h-[250px] shadow-lg hover:scale-105 hover:shadow-red-200  z-30 transition duration-150  rounded-lg text-center bg-card text-white">
+              <div className="grid grid-cols-1  w-[250px] h-[250px] shadow-lg hover:scale-105 hover:shadow-red-500  z-30 transition duration-150  rounded-lg text-center bg-card text-white">
                 <div className="flex justify-center relative top-8   ">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-20 w-20 bg-red-400 text-white shadow-lg shadow-red-300 rounded-full p-4 "
+                    className="h-20 w-20 bg-gradient-to-tr from-red-500 to-red-200  text-white shadow-lg shadow-red-300 rounded-full p-4 "
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -139,7 +139,7 @@ const HeroSection = () => {
                 <div className="flex justify-center relative top-8   ">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-20 w-20 bg-orange-400 text-white shadow-lg shadow-orange-300 rounded-full p-4 "
+                    className="h-20 w-20 bg-gradient-to-tr from-orange-500 to-orange-200  text-white shadow-lg shadow-orange-300 rounded-full p-4 "
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
