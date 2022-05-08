@@ -2,61 +2,54 @@ import React, { useState } from "react";
 // import axios from "axios";
 import loading from "./img/Pulse-1s-130px.svg";
 import emailjs from "emailjs-com";
-import { Formik, Form, Field, ErrorMessage } from "formik";
-import * as Yup from "yup";
 import { useRef } from "react";
 
 // className
 const Contact = () => {
   const form = useRef();
-  const initialValues = {
-    email: "",
-    message: "",
-  };
-  const onSubmit = (e) => {
-    // e.preventDefault();
+
+  const [message, setMessage] = useState("");
+  const [email, setEmail] = useState("");
+  const [wait, setWait] = useState(false);
+  const [buttonsend, setButtonsend] = useState(true);
+  const [checkMark, setcheckMark] = useState(false);
+
+  const sendMail = (e) => {
+    e.preventDefault();
 
     setWait(true);
     setButtonsend(false);
     setTimeout(() => {
-      emailjs
-        .sendForm(
-          "service_pkro8ap",
-          "template_lqcqp18",
-          form.current,
-          "gqVXTZzBFvxnJNmwo"
-        )
-        .then(
-          (result) => {
-            console.log(result.text);
-          },
-          (error) => {
-            console.log(error.text);
-          }
-        );
-
+      // emailjs
+      //   .sendForm(
+      //     "service_pkro8ap",
+      //     "template_lqcqp18",
+      //     form.current,
+      //     "gqVXTZzBFvxnJNmwo"
+      //   )
+      //   .then(
+      //     (result) => {
+      //       console.log(result.text);
+      //     },
+      //     (error) => {
+      //       console.log(error.text);
+      //     }
+      //   );
+      console.log(form.current);
       setWait(false);
       setcheckMark(true);
       setTimeout(() => {
         setcheckMark(false);
         setButtonsend(true);
+        setEmail("");
+        setMessage("");
       }, 2000);
     }, 3000);
   };
 
-  const validationSchema = Yup.object().shape({
-    email: Yup.string().required("Email's requireds"),
-
-    message: Yup.string().required("Message is required"),
-  });
-
-  const [wait, setWait] = useState(false);
-  const [buttonsend, setButtonsend] = useState(true);
-  const [checkMark, setcheckMark] = useState(false);
-
   return (
     <div className=" bg-[#B9C9EA]   font-oxygen map">
-      <section className="text-gray-600 h-screen body-font relative">
+      <section className="text-gray-600 body-font relative">
         <div className="absolute inset-0 bg-gray-300  map">
           <iframe
             width="100%"
@@ -71,18 +64,14 @@ const Contact = () => {
           ></iframe>
         </div>
 
-        <Formik
-          validationSchema={validationSchema}
-          initialValues={initialValues}
-          onSubmit={onSubmit}
-          className="container px-5 py-24 mx-auto flex shadow-2xl"
-        >
-          <Form
+        <div className="container px-5 py-24 mx-auto flex shadow-2xl">
+          <form
             ref={form}
-            className="lg:w-1/3 md:w-1/2 bg-[#B9C9EA] md:top-32 top-48 rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0 relative z-10 shadow-md"
+            onSubmit={sendMail}
+            className="lg:w-1/3 md:w-1/2 bg-[#B9C9EA]  rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0 relative z-10 shadow-md"
           >
             <h2 className="text-white text-2xl font-bold mb-1 title-font">
-              Contact Me
+              Contact
             </h2>
             <p className="leading-relaxed mb-5 text-gray-600">
               Post-ironic portland shabby chic echo park, banjo fashion axe
@@ -94,16 +83,13 @@ const Contact = () => {
               >
                 Email
               </label>
-              <Field
+              <input
                 type="email"
                 id="email"
                 name="email"
-                className="w-full bg-white rounded border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-[#3C517A] text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out  hover:border-2 hover:border-[#3C517A] "
-              />
-              <ErrorMessage
-                name="email"
-                component="span"
-                className="text-red-400"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                className="w-full bg-white rounded border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-[#3C517A]text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out  hover:border-2 hover:border-[#3C517A] "
               />
             </div>
             <div className="relative mb-4">
@@ -113,17 +99,13 @@ const Contact = () => {
               >
                 Message
               </label>
-              <Field
-                as="textarea"
+              <textarea
                 id="message"
                 name="message"
-                className="w-full bg-white rounded border  border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-[#3C517A] h-16 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out hover:border-2 hover:border-[#3C517A] "
-              />
-              <ErrorMessage
-                name="message"
-                component="span"
-                className="text-red-400"
-              />
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
+                className="w-full bg-white rounded border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-[#3C517A]h-20 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out hover:border-2 hover:border-[#3C517A] "
+              ></textarea>
             </div>
             <div className="w-full flex justify-center">
               {wait && (
@@ -156,6 +138,7 @@ const Contact = () => {
               {buttonsend && (
                 <button
                   name="send"
+                  onClick={sendMail}
                   className="rounded-full hover:border-dashed min-w-[100px] min-h-[100px] md:w-32 md:h-32 shadow-2xl transition duration-0 md:duration-300 text-gray-90 border-2 border-white  bg-blue-800 text-white text-lg font-bold hover:bg-transparent hover:border-gray-900 "
                 >
                   Send
@@ -167,8 +150,8 @@ const Contact = () => {
               Chicharrones blog helvetica normcore iceland tousled brook viral
               artisan.
             </p>
-          </Form>
-        </Formik>
+          </form>
+        </div>
       </section>
     </div>
   );
