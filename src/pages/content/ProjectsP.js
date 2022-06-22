@@ -92,4 +92,31 @@ export const projects = [
     TechnologiesUsed: "PHP,...",
     DemoLink: "https://project2.bensaad-fares.xyz/",
   },
+  {
+    id: 8,
+    Title: "Fire base react chat app",
+    Societyname: "Chat App realtime",
+    Minidescription:
+      "   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde doloremque deserunt deleniti?",
+    Description:
+      " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde doloremque deserunt delenitiLorem ipsum dolor sit amet consectetur, adipisicing elit. Unde doloremque deserunt deleniti? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde doloremque deserunt deleniti?",
+    PictureSRC: "https://miro.medium.com/max/1400/1*ZBSX06fzK-gFy_Cj3FwzUg.png",
+
+    TechnologiesUsed: "Firebase,...",
+    DemoLink: "#",
+  },
+  {
+    id: 9,
+    Title: "Strapi Next JS CMS ",
+    Societyname: "Blog",
+    Minidescription:
+      "   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde doloremque deserunt deleniti?",
+    Description:
+      " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde doloremque deserunt delenitiLorem ipsum dolor sit amet consectetur, adipisicing elit. Unde doloremque deserunt deleniti? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde doloremque deserunt deleniti?",
+    PictureSRC:
+      "https://d2zv2ciw0ln4h1.cloudfront.net/uploads/Next_a7b1c0f30b.png",
+
+    TechnologiesUsed: "Firebase,...",
+    DemoLink: "#",
+  },
 ];
