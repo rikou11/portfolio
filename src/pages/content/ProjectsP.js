@@ -21,7 +21,8 @@ export const projects = [
       "   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde doloremque deserunt deleniti?",
     Description:
       " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde doloremque deserunt delenitiLorem ipsum dolor sit amet consectetur, adipisicing elit. Unde doloremque deserunt deleniti? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde doloremque deserunt deleniti?",
-    PictureSRC: "https://dummyimage.com/600x400/3c517a/fff.png     ",
+    PictureSRC:
+      "https://i.pinimg.com/564x/3f/c9/c9/3fc9c90f1da623c013679f361046361d.jpg  ",
     TechnologiesUsed: "PHP,...",
     DemoLink: "https://www.google.com",
   },
@@ -76,5 +77,19 @@ export const projects = [
 
     TechnologiesUsed: "PHP,...",
     DemoLink: "https://www.cabisante.com",
+  },
+  {
+    id: 7,
+    Title: "Bondi Theme",
+    Societyname: "Design System",
+    Minidescription:
+      "   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde doloremque deserunt deleniti?",
+    Description:
+      " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde doloremque deserunt delenitiLorem ipsum dolor sit amet consectetur, adipisicing elit. Unde doloremque deserunt deleniti? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde doloremque deserunt deleniti?",
+    PictureSRC:
+      "https://live.staticflickr.com/65535/52165050666_7ed6b6ea9a_k.jpg",
+
+    TechnologiesUsed: "PHP,...",
+    DemoLink: "https://project2.bensaad-fares.xyz/",
   },
 ];

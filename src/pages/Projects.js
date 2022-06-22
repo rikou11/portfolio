@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { projects } from "./content/ProjectsP";
 const Project = () => {
   return (
-    <div className=" bg-[#B9C9EA]  md:h-[1500px]  font-oxygen  ">
+    <div className=" bg-[#B9C9EA] h-[3300px]  md:h-[1800px]  font-oxygen  ">
       <div className="max-w-screen-2xl px-4 md:px-8 mx-auto">
         <div className="mb-10 md:mb-16">
           <h2 className="text-white text-7xl lg:text-7xl font-bold text-center mb-4 md:mb-6">
@@ -20,7 +20,7 @@ const Project = () => {
             {projects.map((i, index) => {
               return (
                 <div key={index} className="grid ">
-                  <span className="group h-48 md:h-96 flex justify-end items-end bg-gray-100 overflow-hidden rounded-lg shadow-lg relative">
+                  <span className="group h-72 md:h-96 flex justify-end items-end bg-gray-100 overflow-hidden rounded-lg shadow-lg relative">
                     <img
                       src={i.PictureSRC}
                       loading="lazy"
