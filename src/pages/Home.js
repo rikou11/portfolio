@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import image from "./img/me.jpg";
+import image from "./img/gold-bg-designify.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import HeroSection from "../components/home/HeroSection";
@@ -14,7 +14,7 @@ const Home = () => {
 
   const Navigate = useNavigate();
   return (
-    <div className="m-0 overflow-hidden">
+    <div className="m-0 ">
       {/* Section 1 500px  */}
       <section>
         {" "}
@@ -39,12 +39,7 @@ const Home = () => {
                 <h2 className=" font-bold md:pl-10 text-4xl text-[#3C517A]">
                   A bit about me{" "}
                 </h2>
-                <p
-                  data-aos="fade-right"
-                  data-aos-offset="300"
-                  data-aos-easing="ease-in-sine"
-                  className="pl-15 md:pl-10 text-lg w:[300px] font-bold font-oxygen  md:w-[450px] text-[#3C517A]"
-                >
+                <p className="pl-15 md:pl-10 text-lg w:[300px] font-bold font-oxygen  md:w-[450px] text-[#3C517A]">
                   Highly driven recent web and information system graduate. With
                   a flair for creating elegant solutions in the least amount of
                   time. Proven record of managing computer hardware repair at
