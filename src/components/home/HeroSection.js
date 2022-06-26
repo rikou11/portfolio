@@ -1,18 +1,25 @@
-import React from "react";
+import React, { useEffect } from "react";
 import CountUp from "react-countup";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 const HeroSection = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+  }, []);
+
   return (
     <>
       <section className=" font-oxygen  h-fit pb-10 bg-[#0a094f]">
-        <div className="relative z-10">
+        <div className="relative z-10 bg-cover ">
           {" "}
-          <div className="h-20 w-20 rounded-ful blur-[50px] bg-yellow-500 absolute left-28 top-96"></div>
+          <div className="h-40 w-40 rounded-ful blur-[100px] bg-yellow-500 absolute left-28 top-96"></div>
           <div className="h-40 w-40 rounded-ful blur-[100px] bg-cyan-500 absolute  right-0 top-36 "></div>
           <div className="h-40 w-40 rounded-ful blur-[100px] bg-red-500 absolute  left-8 top-10  "></div>
-          <div className="h-40 w-40 rounded-ful blur-[80px] bg-purple-700 absolute  left-[900px]  top-[300px] "></div>
-          <div className="h-40 w-40 rounded-ful blur-[50px] bg-blue-700 absolute  left-[700px] top-[300px]  "></div>
-          <div className="h-40 w-40 rounded-ful blur-[150px] bg-blue-400 absolute  left-[600px]   top-[300px]"></div>
+          <div className="h-40 w-40 rounded-ful blur-[80px] bg-purple-700 absolute  left-2/3  -top-3/4 "></div>
+          <div className="h-40 w-40 rounded-ful blur-[100px] bg-blue-700 absolute  left-3/4  top-0   "></div>
+          <div className="h-40 w-40 rounded-ful blur-[150px] bg-blue-400 absolute  left-2/4   top-[300px]"></div>
         </div>
 
         {/* Title and description*/}
@@ -34,7 +41,7 @@ const HeroSection = () => {
           <div className="xl:grid grid xl:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-10 text-[#3C517A] ">
             <div className="grid-cols-1 grid gap-14 ">
               {/* cards 1 */}
-              <div className="grid grid-cols-1  w-[250px] h-[250px] shadow-lg hover:scale-105 hover:shadow-yellow-200  z-30 transition duration-150  rounded-lg text-center bg-card text-white">
+              <div data-aos="fade-up" className="grid grid-cols-1  w-[250px] h-[250px] shadow-lg hover:scale-105 hover:shadow-yellow-200  z-30 transition duration-150  rounded-lg text-center bg-card text-white">
                 <div className="flex justify-center relative top-8   ">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -54,7 +61,7 @@ const HeroSection = () => {
                 <div className="grid grid-cols-1">
                   <span className="text-xl  font-bold">Frontend</span>
                   <span className="text-base text-[#3C517A] font-bold">
-                    <span className="text-orange-500 z-30">25</span> Projects
+                    <span className="text-orange-500 z-30">20</span> Projects
                   </span>
                 </div>
               </div>
@@ -68,7 +75,7 @@ const HeroSection = () => {
               </div>
             </div>
             {/* card 2 */}
-            <div className="grid-cols-1 grid gap-14">
+            <div data-aos="fade-up" className="grid-cols-1 grid gap-14">
               <div className="grid grid-cols-1  w-[250px] h-[250px] shadow-lg hover:scale-105 hover:shadow-blue-200 z-30  transition duration-150  rounded-lg text-center bg-card text-white">
                 <div className="flex justify-center relative top-8   ">
                   <svg
@@ -85,7 +92,7 @@ const HeroSection = () => {
                 <div className="grid grid-cols-1">
                   <span className="text-xl  font-bold">DataBase</span>
                   <span className="text-base text-[#3C517A] font-bold">
-                    <span className="text-orange-500">25</span> Projects
+                    <span className="text-orange-500">34</span> Projects
                   </span>
                 </div>
               </div>
@@ -99,7 +106,7 @@ const HeroSection = () => {
               </div>
             </div>
             {/* card 3 */}
-            <div className="grid-cols-1 grid gap-14">
+            <div data-aos="fade-up" className="  grid-cols-1 grid gap-14">
               <div className="grid grid-cols-1  w-[250px] h-[250px] shadow-lg hover:scale-105 hover:shadow-red-500  z-30 transition duration-150  rounded-lg text-center bg-card text-white">
                 <div className="flex justify-center relative top-8   ">
                   <svg
@@ -120,7 +127,7 @@ const HeroSection = () => {
                 <div className="grid grid-cols-1">
                   <span className="text-xl  font-bold">Backend</span>
                   <span className="text-base text-[#3C517A] font-bold">
-                    <span className="text-orange-500">25</span> Projects
+                    <span className="text-orange-500">10</span> Projects
                   </span>
                 </div>
               </div>
@@ -134,7 +141,7 @@ const HeroSection = () => {
               </div>
             </div>
             {/* card 4 */}
-            <div className="grid-cols-1 grid gap-14">
+            <div className="grid-cols-1 grid gap-14" data-aos="fade-up">
               <div className="grid grid-cols-1  w-[250px] h-[250px] shadow-lg hover:scale-105 hover:shadow-orange-200 z-30  transition duration-150  rounded-lg text-center bg-card text-white">
                 <div className="flex justify-center relative top-8   ">
                   <svg
@@ -155,7 +162,7 @@ const HeroSection = () => {
                 <div className="grid grid-cols-1">
                   <span className="text-xl  font-bold">Problem Solving</span>
                   <span className="text-base text-[#3C517A] font-bold">
-                    <span className="text-orange-500">25</span> Projects
+                    <span className="text-orange-500">54</span> Projects
                   </span>
                 </div>
               </div>

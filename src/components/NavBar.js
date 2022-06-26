@@ -1,13 +1,19 @@
 import React from "react";
+//  { useContext }
 import { useState } from "react";
 import { Link } from "react-router-dom";
-
+// import ThemeContext from './Layout'
 import cv from "../files/Bensaad-Fares Resume.pdf";
 const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
+  // const darkTheme = useContext(ThemeContext);
+  // const themeStyles = {
+  //   backgroundColor: darkTheme ? "#B9C9EA" : "#3C517A",
+  //   color: darkTheme ? "#fff" : "#000",
+  // }
   return (
-    <div className="bg-[#B9C9EA] navbar font-oxygen ">
+    // style={themeStyles}
+    <div className="navbar font-oxygen">
       <div className="px-2 py-3 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-20 lg:px-4 navbar ">
         <div className="relative flex items-center justify-between ">
           <Link
