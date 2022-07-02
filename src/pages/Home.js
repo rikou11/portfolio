@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import image from "./img/gold-bg-designify.png";
+import image from "./img/mypic.svg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import HeroSection from "../components/home/HeroSection";
@@ -24,10 +24,12 @@ const Home = () => {
               <div className=" pt-10 md:pt-8 w-64 h-64 md:w-[500px] md:h-64  ">
                 <img
                   data-aos="zoom-in"
-                  className=" z-0 grayscale rounded-full border-8 border-white  bg-slate-200 shadow-2xl"
+                  className=" z-0 "
+                  // grayscale rounded-full border-8 border-white  bg-slate-200 shadow-2xl
                   src={image}
                   alt=""
                 />
+
               </div>
             </div>
 

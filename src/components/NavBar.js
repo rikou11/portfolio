@@ -22,21 +22,6 @@ const NavBar = () => {
             title="my name"
             className="inline-flex items-center "
           >
-            {/* <svg
-              className="w-8 text-[#3C517A]"
-              viewBox="0 0 24 24"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeMiterlimit="10"
-              stroke="currentColor"
-              fill="none"
-            >
-              <rect x="3" y="1" width="7" height="12" />
-              <rect x="3" y="17" width="7" height="6" />
-              <rect x="14" y="1" width="7" height="6" />
-              <rect x="14" y="11" width="7" height="12" />
-            </svg> */}
             <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 274 274">
               <g id="Layer_2" data-name="Layer 2" transform="translate(0.004 0.003)">
                 <g id="Layer_1" data-name="Layer 1" transform="translate(-0.004 -0.003)">
