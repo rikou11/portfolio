@@ -14,7 +14,7 @@ const NavBar = () => {
   return (
     // style={themeStyles}
     <div className="navbar font-oxygen bg-[#B9C9EA]">
-      <div className="px-2 py-3 mx-auto  sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-20 lg:px-4 navbar ">
+      <div className="px-2 py-3 mx-auto  bg-[#B9C9EA] sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-20 lg:px-4 navbar ">
         <div className="relative flex items-center justify-between ">
           <Link
             to="/"
