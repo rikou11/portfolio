@@ -26,7 +26,7 @@ const Home = () => {
                 <h1 className="text-shadow font-mono text-sm  mt-10 lg:text-xl text-cyan-400 ">
                   Hi, my name is
                 </h1>
-                <h2 className="font-oxygen font-bold md:pl-10 text-5xl xl:text-6xl text-white">
+                <h2 className="font-oxygen font-bold md:pl-10 text-4xl xl:text-6xl text-white">
                   <Typewriter
                     words={['Fares Bensaad.', 'A Web Developer', 'A Web Designer', 'Nice to meet you.']}
                     loop={2}
