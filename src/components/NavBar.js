@@ -13,8 +13,8 @@ const NavBar = () => {
   // }
   return (
     // style={themeStyles}
-    <div className="navbar font-oxygen bg-[#B9C9EA]">
-      <div className="px-2 py-3 mx-auto  bg-[#B9C9EA] sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-20 lg:px-4 navbar ">
+    <div className="sticky navbar font-oxygen bg-[#292D99] ">
+      <div className="px-2 py-3 mx-auto  bg-[#292D99] sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-20 lg:px-4  ">
         <div className="relative flex items-center justify-between ">
           <Link
             to="/"
@@ -22,13 +22,22 @@ const NavBar = () => {
             title="my name"
             className="inline-flex items-center "
           >
-            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 274 274">
-              <g id="Layer_2" data-name="Layer 2" transform="translate(0.004 0.003)">
-                <g id="Layer_1" data-name="Layer 1" transform="translate(-0.004 -0.003)">
-                  <path id="Path_1" data-name="Path 1" d="M203.89.867l-25.132-.1c-18.724-.09-32.1,4.991-41.021,14.084C128.93,5.553,115.555.288,96.7.163L71.565,0C31.577-.261,1,29.787.687,78.182c-.11,18.306,7.59,46.233,38.082,58.56C8.137,148.595.108,176.417,0,194.728c-.284,48.409,29.967,78.852,69.955,79.1l25.132.165c39.669.26,55.393-22.533,55.573-57.961l.379-63.995,55.693.4c5.834.035,10.575-6.528,10.595-14.643a17.7,17.7,0,0,0-3.044-10.346,9.2,9.2,0,0,0-7.406-4.337l-55.558-.3.289-62.513c.055-18.57,9.676-28.447,28.445-28.417L202.343,32c26.214.1,42.768,15.291,42.643,45.54-.055,14.613-2.715,25.188-8.593,32.439a16.618,16.618,0,0,0-3.274,10.171v.035c-.07,11.279,10.16,18.306,17.871,12.057,18.055-14.662,22.956-37.624,23.006-52.4C274.185,31.439,243.883,1.061,203.89.867ZM122.347,214.531c-.11,18.605-9.731,28.472-28.485,28.347l-22.292-.145c-26.21-.175-42.738-15.421-42.563-45.639.195-33.283,13.729-45.734,48.407-45.5l45.233.294c.055,0,.08.035.08.1Zm.544-92c0,.065-.03.095-.08.095l-45.238-.294c-34.668-.23-48.047-12.851-47.853-46.1C29.9,45.977,46.6,30.94,72.818,31.115l22.292.15c18.754.12,28.261,10.146,28.151,28.716Z" transform="translate(0.004 0.003)" fill="#324588" />
+            <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="78.571" height="78.571" viewBox="0 0 78.571 78.571">
+              <defs>
+                <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+                  <stop offset="0" stopColor="#05d9b5" />
+                  <stop offset="1" stopColor="#084ce6" />
+                </linearGradient>
+              </defs>
+              <g id="Layer_2" data-name="Layer 2" transform="translate(39.286 0.003) rotate(45)">
+                <g id="Layer_1" data-name="Layer 1" transform="translate(-0.002 -0.002)">
+                  <path id="Path_1" data-name="Path 1" d="M41.341.174l-5.1-.02c-3.8-.018-6.509,1.012-8.318,2.856C26.141,1.125,23.429.057,19.606.032L14.51,0C6.4-.054.2,6.039.138,15.852A12.358,12.358,0,0,0,7.86,27.726,12.31,12.31,0,0,0,0,39.483C-.059,49.3,6.075,55.472,14.183,55.522l5.1.033c8.044.053,11.232-4.569,11.268-11.753l.077-12.976,11.293.081c1.183.007,2.144-1.324,2.148-2.969a3.589,3.589,0,0,0-.617-2.1,1.865,1.865,0,0,0-1.5-.879L30.681,24.9l.059-12.676c.011-3.765,1.962-5.768,5.768-5.762l4.52.024c5.315.02,8.672,3.1,8.647,9.234-.011,2.963-.551,5.107-1.742,6.578a3.37,3.37,0,0,0-.664,2.062v.007c-.014,2.287,2.06,3.712,3.624,2.445,3.661-2.973,4.655-7.629,4.665-10.625C55.595,6.374,49.45.214,41.341.174ZM24.807,43.5c-.022,3.773-1.973,5.773-5.776,5.748l-4.52-.029C9.2,49.182,5.845,46.09,5.88,39.963c.04-6.749,2.784-9.273,9.815-9.226l9.172.06c.011,0,.016.007.016.02Zm.11-18.655c0,.013-.006.019-.016.019l-9.173-.06c-7.03-.047-9.742-2.606-9.7-9.348.036-6.135,3.423-9.184,8.739-9.148l4.52.03c3.8.024,5.73,2.057,5.708,5.823Z" transform="translate(0.002 0.002)" fill="url(#linear-gradient)" />
                 </g>
               </g>
             </svg>
+
+
+
 
 
             <span className="ml-2 flex tracking-wide  text-gray-100 ">
@@ -47,13 +56,7 @@ const NavBar = () => {
                   clipRule="evenodd"
                 />
               </svg>
-              {/* <span
-                aria-label="profession"
-                title="profession"
-                className="font-thin text-base items-end hover:text-gray-200 text-center"
-              >
-                web devloper
-              </span> */}
+
             </span>
           </Link>
           <ul className="flex items-center hidden space-x-8 lg:flex">
@@ -148,7 +151,7 @@ const NavBar = () => {
                 download="fares bensaad cv .pdf"
                 aria-label="Resume Contact"
                 title="Resume Contact"
-                className="font-bold tracking-wide flex shadow-2xl text-blue-700 text-sm rounded-full py-2 px-3 border-dashed border-2 border-blue-900 hover:border-separate hover:border-white hover:bg-blue-900 hover:text-white   bg-slate-50 transition-colors duration-200 "
+                className="font-bold bg-gradient-to-r hover:underline  from-blue-400 to-green-400 tracking-wide flex shadow-2xl  text-sm rounded-full py-2 px-3 border-dashed border-2 border-blue-900 hover:border-separate hover:border-white hover:bg-[#05D9B5] hover:text-white   text-gray-50 transition-colors duration-200 "
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -173,51 +176,44 @@ const NavBar = () => {
               className="p-2 -mr-1 transition duration-200 rounded focus:outline-none focus:shadow-outline"
               onClick={() => setIsMenuOpen(true)}
             >
-              <svg className="w-5 text-gray-600" viewBox="0 0 24 24">
-                <path
-                  fill="currentColor"
-                  d="M23,13H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,13,23,13z"
-                />
-                <path
-                  fill="currentColor"
-                  d="M23,6H1C0.4,6,0,5.6,0,5s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,6,23,6z"
-                />
-                <path
-                  fill="currentColor"
-                  d="M23,20H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,20,23,20z"
-                />
+
+              {/* className="w-5 text-[#05D9B5]" */}
+              <svg xmlns="http://www.w3.org/2000/svg" width="37" height="26" viewBox="0 0 37 26">
+                <rect id="Rectangle_1" data-name="Rectangle 1" width="37" height="4" rx="2" fill="#05d9b5" />
+                <rect id="Rectangle_2" data-name="Rectangle 2" width="29" height="4" rx="2" transform="translate(4 11)" fill="#05d9b5" />
+                <rect id="Rectangle_3" data-name="Rectangle 3" width="37" height="4" rx="2" transform="translate(0 22)" fill="#05d9b5" />
               </svg>
+
+
             </button>
             {isMenuOpen && (
               <div className="absolute top-0 left-0 w-full h-full">
                 <div className="p-5 bg-white border rounded shadow-sm">
                   <div className="flex items-center justify-between mb-4">
                     <div>
-                      <a
-                        href="/"
-                        aria-label="Company"
-                        title="Company"
+                      <Link
+                        to="/"
+
                         className="inline-flex items-center"
                       >
-                        <svg
-                          className="w-8 text-deep-purple-accent-400"
-                          viewBox="0 0 24 24"
-                          strokeLinejoin="round"
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                          strokeMiterlimit="10"
-                          stroke="currentColor"
-                          fill="none"
-                        >
-                          <rect x="3" y="1" width="7" height="12" />
-                          <rect x="3" y="17" width="7" height="6" />
-                          <rect x="14" y="1" width="7" height="6" />
-                          <rect x="14" y="11" width="7" height="12" />
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="78.571" height="78.571" viewBox="0 0 78.571 78.571">
+                          <defs>
+                            <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+                              <stop offset="0" stopColor="#05d9b5" />
+                              <stop offset="1" stopColor="#084ce6" />
+                            </linearGradient>
+                          </defs>
+                          <g id="Layer_2" data-name="Layer 2" transform="translate(39.286 0.003) rotate(45)">
+                            <g id="Layer_1" data-name="Layer 1" transform="translate(-0.002 -0.002)">
+                              <path id="Path_1" data-name="Path 1" d="M41.341.174l-5.1-.02c-3.8-.018-6.509,1.012-8.318,2.856C26.141,1.125,23.429.057,19.606.032L14.51,0C6.4-.054.2,6.039.138,15.852A12.358,12.358,0,0,0,7.86,27.726,12.31,12.31,0,0,0,0,39.483C-.059,49.3,6.075,55.472,14.183,55.522l5.1.033c8.044.053,11.232-4.569,11.268-11.753l.077-12.976,11.293.081c1.183.007,2.144-1.324,2.148-2.969a3.589,3.589,0,0,0-.617-2.1,1.865,1.865,0,0,0-1.5-.879L30.681,24.9l.059-12.676c.011-3.765,1.962-5.768,5.768-5.762l4.52.024c5.315.02,8.672,3.1,8.647,9.234-.011,2.963-.551,5.107-1.742,6.578a3.37,3.37,0,0,0-.664,2.062v.007c-.014,2.287,2.06,3.712,3.624,2.445,3.661-2.973,4.655-7.629,4.665-10.625C55.595,6.374,49.45.214,41.341.174ZM24.807,43.5c-.022,3.773-1.973,5.773-5.776,5.748l-4.52-.029C9.2,49.182,5.845,46.09,5.88,39.963c.04-6.749,2.784-9.273,9.815-9.226l9.172.06c.011,0,.016.007.016.02Zm.11-18.655c0,.013-.006.019-.016.019l-9.173-.06c-7.03-.047-9.742-2.606-9.7-9.348.036-6.135,3.423-9.184,8.739-9.148l4.52.03c3.8.024,5.73,2.057,5.708,5.823Z" transform="translate(0.002 0.002)" fill="url(#linear-gradient)" />
+                            </g>
+                          </g>
                         </svg>
+
                         <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 ">
                           Fares Bensaad
                         </span>
-                      </a>
+                      </Link>
                     </div>
                     <div>
                       <button
@@ -226,16 +222,15 @@ const NavBar = () => {
                         className="p-2 -mt-2 -mr-2 transition duration-200 rounded hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
                         onClick={() => setIsMenuOpen(false)}
                       >
-                        <svg className="w-5 text-gray-600" viewBox="0 0 24 24">
-                          <path
-                            fill="currentColor"
-                            d="M19.7,4.3c-0.4-0.4-1-0.4-1.4,0L12,10.6L5.7,4.3c-0.4-0.4-1-0.4-1.4,0s-0.4,1,0,1.4l6.3,6.3l-6.3,6.3 c-0.4,0.4-0.4,1,0,1.4C4.5,19.9,4.7,20,5,20s0.5-0.1,0.7-0.3l6.3-6.3l6.3,6.3c0.2,0.2,0.5,0.3,0.7,0.3s0.5-0.1,0.7-0.3 c0.4-0.4,0.4-1,0-1.4L13.4,12l6.3-6.3C20.1,5.3,20.1,4.7,19.7,4.3z"
-                          />
+                        <svg xmlns="http://www.w3.org/2000/svg" width="42.126" height="42.126" viewBox="0 0 42.126 42.126">
+                          <rect id="Rectangle_4" data-name="Rectangle 4" width="54.641" height="4.934" rx="2" transform="translate(0 38.637) rotate(-45)" fill="#05d9b5" />
+                          <rect id="Rectangle_5" data-name="Rectangle 5" width="54.641" height="4.934" rx="2" transform="translate(38.637 42.126) rotate(-135)" fill="#05d9b5" />
                         </svg>
+
                       </button>
                     </div>
                   </div>
-                  <nav className="z-40">
+                  <nav className="z-40 pb-20 ">
                     <ul className="space-y-4">
                       <li>
                         <Link

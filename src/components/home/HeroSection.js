@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import CountUp from "react-countup";
+// import pc from './SPRK_default_preset_name_web_1920 – 1.png'
 import AOS from "aos";
 import "aos/dist/aos.css";
 const HeroSection = () => {
@@ -11,25 +12,29 @@ const HeroSection = () => {
 
   return (
     <>
-      <section className=" font-oxygen  h-fit pb-10 bg-[#0a094f]">
+      <section className=" font-oxygen bg-pc h-fit pb-10">
         <div className="relative z-10 bg-cover ">
           {" "}
-          <div className="h-40 w-40 rounded-ful blur-[100px] bg-yellow-500 absolute left-28 top-96"></div>
+          {/* <div className="h-40 w-40 rounded-ful blur-[100px] bg-yellow-500 absolute left-28 top-96"></div>
           <div className="h-40 w-40 rounded-ful blur-[100px] bg-cyan-500 absolute  right-0 top-36 "></div>
           <div className="h-40 w-40 rounded-ful blur-[100px] bg-red-500 absolute  left-8 top-10  "></div>
           <div className="h-40 w-40 rounded-ful blur-[80px] bg-purple-700 absolute  left-2/3  -top-3/4 "></div>
           <div className="h-40 w-40 rounded-ful blur-[100px] bg-blue-700 absolute  left-3/4  top-0   "></div>
-          <div className="h-40 w-40 rounded-ful blur-[150px] bg-blue-400 absolute  left-2/4   top-[300px]"></div>
+          <div className="h-40 w-40 rounded-ful blur-[150px] bg-blue-400 absolute  left-2/4   top-[300px]"></div> */}
+
+          {/* <img src={pc} alt="pc" className="  w-full h-full object-cover" />
+ */}
+
         </div>
 
         {/* Title and description*/}
-        <div className="grid grid-cols-1 gap-3 text-center  w-full  mb-10 z-30">
+        <div className="grid grid-cols-1 gap-3 text-center  w-full  lg:mb-10 z-30">
           <h3 className=" font-bold text-blue-100">SERVICES</h3>
           <h1 className="xl:text-5xl md:text-4xl text-3xl font-bold  font-oxygen text-white ">
             What i'am great at
           </h1>
           <div className="text-center mx-auto">
-            <p className=" text-center xl:w-[550px] md:w-[450px] w-[400px] text-blue-200 ">
+            <p className=" text-center mx-10 text-blue-200 ">
               Duis aute irure dolor in reprehenderit in voluptate velit esse
               cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
               cupida non proident, sunt in culpa qui officia

@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <radialGradient id="radial-gradient" cx="0.5" cy="0.5" r="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#b3b0e4" stop-opacity="0.98"/>
+      <stop offset="0.448" stop-color="#c328a4" stop-opacity="0.451"/>
+      <stop offset="1" stop-color="#5c7380" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient-2" cx="0.5" cy="0.5" r="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#42f886"/>
+      <stop offset="0.063" stop-color="#3ee373" stop-opacity="0.702"/>
+      <stop offset="0.448" stop-color="#147ae1"/>
+      <stop offset="1" stop-color="#7c805c" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient-3" cx="0.5" cy="0.5" r="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#4df842"/>
+      <stop offset="0.259" stop-color="#282dc3"/>
+      <stop offset="1" stop-color="#5c7380" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient-5" cx="0.5" cy="0.5" r="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#42f886"/>
+      <stop offset="0.485" stop-color="#e3693e" stop-opacity="0.702"/>
+      <stop offset="1" stop-color="#7c805c" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient-6" cx="0.5" cy="0.5" r="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#0ec7ff"/>
+      <stop offset="0.41" stop-color="#fefc12"/>
+      <stop offset="0.448" stop-color="#dbddec"/>
+      <stop offset="1" stop-color="#5c7380" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient-7" cx="0.5" cy="0.5" r="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#42f886"/>
+      <stop offset="0.063" stop-color="#3ee373" stop-opacity="0.702"/>
+      <stop offset="0.448" stop-color="#002061"/>
+      <stop offset="1" stop-color="#7c805c" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="clip-SPRK_default_preset_name_web_1920_1">
+      <rect width="1920" height="1080"/>
+    </clipPath>
+  </defs>
+  <g id="SPRK_default_preset_name_web_1920_1" data-name="SPRK_default_preset_name_web_1920 – 1" clip-path="url(#clip-SPRK_default_preset_name_web_1920_1)">
+    <rect width="1920" height="1080" fill="#0a094f"/>
+    <ellipse id="Ellipse_1" data-name="Ellipse 1" cx="307.5" cy="330.5" rx="307.5" ry="330.5" transform="translate(86 128)" fill="url(#radial-gradient)"/>
+    <path id="Path_11" data-name="Path 11" d="M227.894,31.987c59.652,304.669,227.894,136.034,227.894,303.84s-102.032,303.84-227.894,303.84S0,503.633,0,335.827,168.243-272.682,227.894,31.987Z" transform="translate(1425.212 540.334)" fill="url(#radial-gradient-2)"/>
+    <path id="Path_12" data-name="Path 12" d="M194.5,0C1317.879,357.364,389,93.572,389,209S301.919,418,194.5,418,0,324.428,0,209-928.879-357.364,194.5,0Z" transform="translate(758 653)" fill="url(#radial-gradient-3)"/>
+    <ellipse id="Ellipse_15" data-name="Ellipse 15" cx="196" cy="210.5" rx="196" ry="210.5" transform="translate(1375 39)" fill="url(#radial-gradient)"/>
+    <path id="Path_13" data-name="Path 13" d="M141.5,0C492,275.515,283,74.1,283,165.5S219.648,331,141.5,331,0,256.9,0,165.5-209-275.515,141.5,0Z" transform="translate(1662 421)" fill="url(#radial-gradient-5)"/>
+    <path id="Path_14" data-name="Path 14" d="M186,0C301,490.4,372,80.589,372,180S288.725,360,186,360,0,279.411,0,180,71-490.4,186,0Z" transform="translate(945 200)" fill="url(#radial-gradient-6)"/>
+    <ellipse id="Ellipse_16" data-name="Ellipse 16" cx="196" cy="211" rx="196" ry="211" transform="translate(50 686)" fill="url(#radial-gradient-7)"/>
+  </g>
+</svg>

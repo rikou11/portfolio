@@ -25,6 +25,7 @@
   z-index: 0;
 }
 .navbar {
+  height: calc(100%);
   z-index: 10;
 }
 
@@ -36,6 +37,7 @@
   animation: moveIt 15s linear infinite;
   background-position: left;
   background-repeat: no-repeat;
+  height: calc(100%+40px);
 }
 
 .checkmark {
@@ -97,4 +99,19 @@
 }
 .left-70 {
   left: 70%;
+}
+
+@media only screen and (min-width: 600px) {
+  .bg-pc {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../src/components/home/SPRK_default_preset_name_web_1920\ –\ 1.png");
+  }
+}
+@media only screen and (max-width: 600px) {
+  .bg-pc {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../src/components/home/iPhone\ XR\,\ XS\ Max\,\ 11\ –\ 1@2x.png");
+  }
 }

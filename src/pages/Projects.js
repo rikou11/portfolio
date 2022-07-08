@@ -3,14 +3,14 @@ import { Link } from "react-router-dom";
 import { projects } from "./content/ProjectsP";
 const Project = () => {
   return (
-    <div className=" bg-[#B9C9EA] h-[4300px]  md:h-[1800px]  font-oxygen  ">
+    <div className=" bg-[#292D99]  pt-10 pb-20   font-oxygen  ">
       <div className="max-w-screen-2xl px-4 md:px-8 mx-auto">
         <div className="mb-10 md:mb-16">
           <h2 className="text-white text-7xl lg:text-7xl font-bold text-center mb-4 md:mb-6">
             Projects
           </h2>
 
-          <p className="max-w-screen-md text-gray-500 md:text-lg text-center mx-auto">
+          <p className="max-w-screen-md text-gray-200 md:text-lg text-center mx-auto">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
             rerum quibusdam earum, nostrum placeat nihil iusto similique iste
             harum eum mollitia numquam eius!
@@ -40,11 +40,11 @@ const Project = () => {
                       />
                     </a>
                   </span>
-                  <h1 className="text-2xl pt-4 font-bold ">{i.Title}</h1>
-                  <p>{i.Minidescription}</p>
+                  <h1 className="text-2xl text-white pt-4 font-bold ">{i.Title}</h1>
+                  <p className="text-gray-300">{i.Minidescription}</p>
                   <Link
                     to={`${i.id}`}
-                    className="underline decoration-4 font-bold decoration-cyan-200  hover:decoration-0 hover:decoration-cyan-200 hover:text-gray-700"
+                    className="underline decoration-4 font-bold decoration-cyan-200 text-gray-400  hover:decoration-0 hover:decoration-cyan-200 hover:text-green-400"
                   >
                     Description
                   </Link>
