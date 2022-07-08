@@ -4,6 +4,7 @@ import image from "./img/mypic.svg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import HeroSection from "../components/home/HeroSection";
+import { Typewriter, useTypewriter, Cursor } from 'react-simple-typewriter'
 
 const Home = () => {
   useEffect(() => {
@@ -26,16 +27,26 @@ const Home = () => {
                   Hi, my name is
                 </h1>
                 <h2 className="font-oxygen font-bold md:pl-10 text-5xl xl:text-6xl text-white">
-                  Fares Bensaad.
+                  <Typewriter
+                    words={['Fares Bensaad.', 'A Web Developer', 'A Web Designer', 'Nice to meet you.']}
+                    loop={2}
+                    cursor
+                    cursorStyle='_'
+
+
+                  />
                 </h2>
-                <h2 className=" font-thin md:pl-10 text-3xl xl:text-5xl text-gray-300">
-                  I build things for the web
+                <h2 className=" font-bold md:pl-10 text-3xl xl:text-5xl text-gray-300">
+                  <Typewriter
+                    words={['I build things for the web']}
+                    cursor
+                    cursorStyle='_' />
                 </h2>
-                <p className="pl-15 md:pl-10 text-xl w:[300px]  font-sans  lg:w-[500px] text-gray-400">
+                <p className="pl-15 md:pl-10 text-xl w:[300px]  font-sans  lg:w-[500px] text-gray-300">
                   Highly driven recent web and information systems graduate. With
                   a flair for creating elegant solutions in the least amount of
-                  time. Comes with successful experience in Frontend &
-                  Backend Web development.
+                  time. Comes with successful experience in <span className="text-cyan-500 hover:underline cursor-pointer" >Frontend</span> & <span className="text-cyan-500 hover:underline cursor-pointer" >Backend </span>
+                  Web development.
                 </p>
               </div>
               <div

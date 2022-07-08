@@ -1,6 +1,9 @@
 import React from "react";
 import Footer from "./Footer";
 import NavBar from "./NavBar";
+
+import AnimatedCursor from "react-animated-cursor";
+
 // export const ThemeContext = React.createContext();
 const Layout = ({ children }) => {
 
@@ -15,8 +18,17 @@ const Layout = ({ children }) => {
           console.log(DarkTheme)
           setDarkTheme(prevDarkTheme => !prevDarkTheme);
         }}>dark theme</button> */}
+
+
       <NavBar />
+      <AnimatedCursor innerSize={8}
+        outerSize={16}
+        color="17, 163, 231"
+        outerAlpha={0.2}
+        innerScale={0.7}
+        outerScale={4} />
       {children}
+
 
       <Footer />
       {/* </ThemeContext.Provider> */}

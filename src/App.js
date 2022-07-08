@@ -13,13 +13,14 @@ import ProjectId from "./pages/ProjectDisplay";
 const App = () => {
   return (
     <BrowserRouter>
+
       <Routes>
         <Route
           path="/"
           element={
-            <Layout>
-              <Home />
-            </Layout>
+            <Layout> <Home />     </Layout>
+
+
           }
         />
 
