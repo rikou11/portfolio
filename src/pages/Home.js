@@ -4,7 +4,7 @@ import image from "./img/mypic.svg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import HeroSection from "../components/home/HeroSection";
-import { Typewriter, useTypewriter, Cursor } from 'react-simple-typewriter'
+import { Typewriter } from 'react-simple-typewriter'
 
 const Home = () => {
   useEffect(() => {
