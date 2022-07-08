@@ -79,7 +79,7 @@ const Contact = () => {
         >
           <Form
             ref={form}
-            className="lg:w-1/3 md:w-1/2 bg-[#B9C9EA] md:top-32 top-48 rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0 relative z-10 shadow-md"
+            className="lg:w-1/3 md:w-1/2  sticky  z-50 bg-[#B9C9EA] md:top-32 top-48 rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0  shadow-md"
           >
             <h2 className="text-white text-2xl font-bold mb-1 title-font">
               Contact Me
@@ -163,10 +163,7 @@ const Contact = () => {
               )}
             </div>
 
-            <p className="text-xs text-[#3C517A] mt-3">
-              Chicharrones blog helvetica normcore iceland tousled brook viral
-              artisan.
-            </p>
+
           </Form>
         </Formik>
       </section>

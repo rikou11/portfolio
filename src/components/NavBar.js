@@ -13,7 +13,7 @@ const NavBar = () => {
   // }
   return (
     // style={themeStyles}
-    <div className="sticky navbar font-oxygen bg-[#292D99] ">
+    <div id="nav" className=" sticky top-0 z-50 navbar font-oxygen bg-[#292D99] ">
       <div className="px-2 py-3 mx-auto  bg-[#292D99] sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-20 lg:px-4  ">
         <div className="relative flex items-center justify-between ">
           <Link
@@ -40,7 +40,7 @@ const NavBar = () => {
 
 
 
-            <span className="ml-2 flex tracking-wide  text-gray-100 ">
+            {/* <span className="ml-2 flex tracking-wide  text-gray-100 ">
               <span className="tracking-wide text-2xl font-bold hover:text-white ">
                 Fares Bensaad
               </span>
@@ -57,14 +57,14 @@ const NavBar = () => {
                 />
               </svg>
 
-            </span>
+            </span> */}
           </Link>
           <ul className="flex items-center hidden space-x-8 lg:flex">
             <li>
               <Link
                 to="/"
-                aria-label="Our Resume"
-                title="Our Resume"
+                aria-label="Home"
+                title="Home page"
                 className="font-medium flex tracking-wide text-gray-100 transition-colors duration-200 hover:text-[#9DABC7]"
               >
                 <svg
@@ -124,8 +124,8 @@ const NavBar = () => {
             <li>
               <Link
                 to="/contact"
-                aria-label="Resume Contact"
-                title="Resume Contact"
+                aria-label="Contact"
+                title="Contact"
                 className="font-medium flex tracking-wide text-gray-100 transition-colors duration-200 hover:text-[#9DABC7]"
               >
                 <svg
@@ -178,16 +178,17 @@ const NavBar = () => {
             >
 
               {/* className="w-5 text-[#05D9B5]" */}
-              <svg xmlns="http://www.w3.org/2000/svg" width="37" height="26" viewBox="0 0 37 26">
-                <rect id="Rectangle_1" data-name="Rectangle 1" width="37" height="4" rx="2" fill="#05d9b5" />
-                <rect id="Rectangle_2" data-name="Rectangle 2" width="29" height="4" rx="2" transform="translate(4 11)" fill="#05d9b5" />
-                <rect id="Rectangle_3" data-name="Rectangle 3" width="37" height="4" rx="2" transform="translate(0 22)" fill="#05d9b5" />
+              <svg xmlns="http://www.w3.org/2000/svg" width="37" height="19.652" viewBox="0 0 37 19.652">
+                <rect id="Rectangle_1" data-name="Rectangle 1" width="37" height="3" rx="1.5" transform="translate(37 19.652) rotate(-180)" fill="#05d9b5" />
+                <rect id="Rectangle_3" data-name="Rectangle 3" width="37" height="3" rx="1.5" transform="translate(37 3) rotate(-180)" fill="#05d9b5" />
               </svg>
+
+
 
 
             </button>
             {isMenuOpen && (
-              <div className="absolute top-0 left-0 w-full h-full">
+              <div className="absolute top-0 left-0 w-full h-full  transition duration-300">
                 <div className="p-5 bg-white border rounded shadow-sm">
                   <div className="flex items-center justify-between mb-4">
                     <div>
@@ -255,8 +256,8 @@ const NavBar = () => {
                       <li>
                         <Link
                           to="/project"
-                          aria-label="Our Resume"
-                          title="Our Resume"
+                          aria-label="Projects"
+                          title="bensaad fares porjects"
                           className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                         >
                           Projects

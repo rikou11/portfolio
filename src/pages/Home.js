@@ -20,33 +20,22 @@ const Home = () => {
         {/* {" "} shapes-bg */}
         <div className=" bg-[#292D99]  font-oxygen  ">
           <div className=" grid grid-cols-1 gap-16 lg:gap-10 justify-center lg:flex lg:justify-center  ">
-            <div className="flex justify-center  ">
-              <div className=" pt-10 md:pt-8 w-64 h-64 lg:w-[500px] lg:h-64  ">
-                <img
-                  data-aos="zoom-in"
-                  className=" z-0 "
-                  // grayscale rounded-full border-8 border-white  bg-slate-200 shadow-2xl
-                  src={image}
-                  alt=""
-                />
-
-              </div>
-            </div>
-
             <div className="grid grid-cols-1 gap-10  ">
-              <div className="grid justify-center p-4 ">
-                <h1 className="text-shadow font-bold text-5xl mt-10 lg:text-8xl text-white ">
-                  Hello
+              <div className="grid justify-center p-4 gap-4 ">
+                <h1 className="text-shadow font-mono text-sm  mt-10 lg:text-xl text-cyan-400 ">
+                  Hi, my name is
                 </h1>
-                <h2 className=" font-bold md:pl-10 text-4xl text-white">
-                  A bit about me{" "}
+                <h2 className="font-oxygen font-bold md:pl-10 text-5xl xl:text-6xl text-white">
+                  Fares Bensaad.
                 </h2>
-                <p className="pl-15 md:pl-10 text-lg w:[300px]  font-sans  md:w-[450px] text-gray-200">
-                  Highly driven recent web and information system graduate. With
+                <h2 className=" font-thin md:pl-10 text-3xl xl:text-5xl text-gray-300">
+                  I build things for the web
+                </h2>
+                <p className="pl-15 md:pl-10 text-xl w:[300px]  font-sans  lg:w-[500px] text-gray-400">
+                  Highly driven recent web and information systems graduate. With
                   a flair for creating elegant solutions in the least amount of
-                  time. Proven record of managing computer hardware repair at
-                  university. Comes with successful experience in Front-End &
-                  Back-End Web development.
+                  time. Comes with successful experience in Frontend &
+                  Backend Web development.
                 </p>
               </div>
               <div
@@ -78,7 +67,20 @@ const Home = () => {
                   </button>
                 </span>
               </div>
+            </div>      <div className="flex justify-center  ">
+              <div className=" align-middle md:pt-8 w-80 h-80 lg:w-[400px] lg:h-64  ">
+                <img
+                  data-aos="zoom-in"
+                  className=" z-0 "
+                  // grayscale rounded-full border-8 border-white  bg-slate-200 shadow-2xl
+                  src={image}
+                  alt=""
+                />
+
+              </div>
             </div>
+
+
           </div>
         </div>
         <div className="h-[150px] bg-[#0a094f] ">

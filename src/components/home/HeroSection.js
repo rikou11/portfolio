@@ -44,9 +44,9 @@ const HeroSection = () => {
         {/* Card */}
         <div className="flex justify-center w-full  z-30">
           <div className="xl:grid grid xl:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-10 text-[#3C517A] ">
-            <div className="grid-cols-1 grid gap-14 ">
-              {/* cards 1 */}
-              <div data-aos="fade-up" className="grid grid-cols-1  w-[250px] h-[250px] shadow-lg hover:scale-105 hover:shadow-yellow-200  z-30 transition duration-150  rounded-lg text-center bg-card text-white">
+            {/* cards 1 */}
+            <div data-aos="fade-up" className="grid-cols-1 grid gap-14">
+              <div className="grid grid-cols-1  w-[250px] h-[250px] shadow-lg hover:scale-105 hover:shadow-blue-200 z-30  transition duration-150  rounded-lg text-center bg-card text-white">
                 <div className="flex justify-center relative top-8   ">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
