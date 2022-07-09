@@ -5,6 +5,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import HeroSection from "../components/home/HeroSection";
 import { Typewriter } from 'react-simple-typewriter'
+import About from "../components/home/About";
 
 const Home = () => {
   useEffect(() => {
@@ -106,6 +107,7 @@ const Home = () => {
       </section>
       {/* Section 2 */}
       <HeroSection />
+      <About />
     </div>
   );
 };

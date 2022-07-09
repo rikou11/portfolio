@@ -137,3 +137,34 @@
     transform: rotate(360deg);
   }
 }
+
+/* #about {
+  background-image: url("./components/home/strings.svg");
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-size: 400px;
+} */
+#about .img {
+  max-height: 300px;
+  max-width: 300px;
+}
+
+#mypic {
+  position: absolute;
+  height: 300px;
+  width: 300px;
+}
+#mypic:hover {
+  transform: scale(1.05);
+  transition: all 0.2s ease-in-out;
+}
+#frame {
+  position: relative;
+  top: 50px;
+  height: 300px;
+  width: 300px;
+  left: 40px;
+}
+#frame:hover {
+  color: #7ac142;
+}

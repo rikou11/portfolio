@@ -173,7 +173,7 @@ const NavBar = () => {
               </a>
             </li>
           </ul>
-          <div className="lg:hidden absolute top-4 right-20">
+          <div className="lg:hidden relative bottom-10 right-20">
             <GhostNavbar
               styles={{
                 fontColor: "#fff",
