@@ -153,18 +153,17 @@
   position: absolute;
   height: 300px;
   width: 300px;
+  z-index: 2;
 }
 #mypic:hover {
   transform: scale(1.05);
   transition: all 0.2s ease-in-out;
 }
 #frame {
+  z-index: 1;
   position: relative;
   top: 50px;
   height: 300px;
   width: 300px;
   left: 40px;
-}
-#frame:hover {
-  color: #7ac142;
 }

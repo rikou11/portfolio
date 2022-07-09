@@ -173,15 +173,13 @@ const NavBar = () => {
               </a>
             </li>
           </ul>
-          <div className="lg:hidden relative bottom-10 right-20">
+          <div className="lg:hidden relative bottom-4 right-20">
             <GhostNavbar
               styles={{
                 fontColor: "#fff",
                 fontHoverColor: "black",
                 listHoverColor: ["transparent", "#151BF5"],
-                floatButtonSize: 0.2,
-                floatButtonX: 6,
-                floatButtonY: 10,
+
                 navigationButton: {
 
                   backgroundColor: "white"
