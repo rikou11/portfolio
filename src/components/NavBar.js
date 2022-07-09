@@ -179,9 +179,9 @@ const NavBar = () => {
                 fontColor: "#fff",
                 fontHoverColor: "black",
                 listHoverColor: ["transparent", "#151BF5"],
-                floatButtonSize: 0.6,
+                floatButtonSize: 0.2,
                 floatButtonX: 6,
-                floatButtonY: 100,
+                floatButtonY: 10,
                 navigationButton: {
 
                   backgroundColor: "white"
@@ -197,7 +197,7 @@ const NavBar = () => {
               >
                 <li className=" text-white"><Link to='/'><p>Home</p></Link></li>
                 <li className=" text-white"><Link to='/resume'><p>Resume</p></Link></li>
-                <li className=" text-white"><Link to='/projects'><p>Projects</p></Link></li>
+                <li className=" text-white"><Link to='/project'><p>Projects</p></Link></li>
                 <li className=" text-white"><Link to='/contact'><p>Contact</p></Link></li>
                 <li className=" text-white"><a
                   href={cv}
