@@ -108,12 +108,23 @@
     background-size: cover;
     background-image: url("../src/components/home/SPRK_default_preset_name_web_1920\ –\ 1.png");
   }
+  #about {
+    background-image: url("./components/home/about.svg");
+    background-repeat: no-repeat;
+    background-position: calc(100% + 160px);
+
+    background-size: 500px;
+    background-color: #292d99;
+  }
 }
 @media only screen and (max-width: 600px) {
   .bg-pc {
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url("../src/components/home/iPhone\ XR\,\ XS\ Max\,\ 11\ –\ 1@2x.png");
+  }
+  #about {
+    background-color: #292d99;
   }
 }
 
@@ -138,12 +149,6 @@
   }
 }
 
-/* #about {
-  background-image: url("./components/home/strings.svg");
-  background-repeat: no-repeat;
-  background-position-x: right;
-  background-size: 400px;
-} */
 #about .img {
   max-height: 300px;
   max-width: 300px;
@@ -166,4 +171,11 @@
   height: 300px;
   width: 300px;
   left: 40px;
+}
+#skills {
+  background-image: url("./components/home/about.svg");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-color: #292d99;
+  background-position-x: -150px;
 }

@@ -3,7 +3,7 @@ import React from "react";
 import AboutPic from "./AboutPic";
 const About = () => {
     return (
-        <div id="about" className="h-fit py-4 bg-[#292D99] font-oxygen ">
+        <div id="about" className="h-fit py-4  font-oxygen ">
 
             <div className="flex justify-center pt-10 mb-10">
                 <h1 className="text-6xl font-bold text-white">About Me</h1>
