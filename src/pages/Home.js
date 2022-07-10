@@ -31,7 +31,7 @@ const Home = () => {
                 </h1>
                 <h2 className="font-oxygen font-bold md:pl-10 text-4xl xl:text-6xl text-white">
                   <Typewriter
-                    words={['Fares Bensaad.', 'A Web Developer', 'A Web Designer', 'Nice to meet you.']}
+                    words={['Fares Bensaad.']}
                     loop={2}
                     cursor
                     cursorStyle='_'
@@ -41,7 +41,7 @@ const Home = () => {
                 </h2>
                 <h2 className=" font-bold md:pl-10 text-3xl xl:text-5xl text-gray-300">
                   <Typewriter
-                    words={['I build things for the web']}
+                    words={['A Web Developer', 'I build things for the web', 'A Web Designer', 'Nice to meet you.']}
                     cursor
                     cursorStyle='_' />
                 </h2>
