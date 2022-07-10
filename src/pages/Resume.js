@@ -11,16 +11,14 @@ const Resume = () => {
   }, []);
 
   return (
-    <div className=" bg-[#292D99]  px-2 md:px-0 py-20 font-oxygen arrows ">
+    <div id="resume" className=" bg-[#292D99]  px-2 md:px-0 py-20 font-oxygen arrows ">
       <h1 className="font-bold text-white text-4xl  md:text-6xl md:pl-44 md:py-16">
         Resume
       </h1>
-
       <div className="text-[#3C517A] px-[20px] md:px-0">
         {/* md:grid md:grid-cols-2 */}
-        <div className="   md:flex">
-          {" "}
-          <h1 className="font-bold md:pl-40 md:text-3xl text-gray-100 md:w-[600px] ">
+        <div className="md:flex">
+          <h1 className="font-bold md:pl-40 md:text-3xl text-gray-100 md:w-[600px]">
             Work Experience
           </h1>
           <ul className="grid grid-cols-1 gap-10 mt-6">

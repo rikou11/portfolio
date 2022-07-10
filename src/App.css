@@ -112,7 +112,6 @@
     background-image: url("./components/home/about.svg");
     background-repeat: no-repeat;
     background-position: calc(100% + 160px);
-
     background-size: 500px;
     background-color: #292d99;
   }
@@ -178,4 +177,27 @@
   background-repeat: no-repeat;
   background-color: #292d99;
   background-position-x: -150px;
+}
+#getintouch {
+  background: rgb(47, 193, 142);
+  background: -moz-linear-gradient(
+    0deg,
+    rgba(47, 193, 142, 1) 0%,
+    rgba(41, 45, 153, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    0deg,
+    rgba(47, 193, 142, 1) 0%,
+    rgba(41, 45, 153, 1) 100%
+  );
+  background: linear-gradient(
+    0deg,
+    rgba(47, 193, 142, 1) 0%,
+    rgba(41, 45, 153, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2fc18e",endColorstr="#292d99",GradientType=1);
+}
+.intouch {
+  flex-direction: column;
+  align-items: center;
 }

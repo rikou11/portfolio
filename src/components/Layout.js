@@ -3,6 +3,8 @@ import Footer from "./Footer";
 import NavBar from "./NavBar";
 
 import AnimatedCursor from "react-animated-cursor";
+// import { Nav } from "./nav";
+
 
 // export const ThemeContext = React.createContext();
 const Layout = ({ children }) => {
@@ -19,7 +21,7 @@ const Layout = ({ children }) => {
           setDarkTheme(prevDarkTheme => !prevDarkTheme);
         }}>dark theme</button> */}
 
-
+      {/* <Nav /> */}
       <NavBar />
       <AnimatedCursor innerSize={8}
         outerSize={16}
