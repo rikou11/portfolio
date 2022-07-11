@@ -2,17 +2,19 @@ export const projects = [
   {
     id: 1,
     Title: "PFE",
-    Societyname: "Hospital",
+    Societyname: "Landing Page Next Js",
     Minidescription:
       "   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde doloremque deserunt deleniti?",
     Description:
       " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde doloremque deserunt delenitiLorem ipsum dolor sit amet consectetur, adipisicing elit. Unde doloremque deserunt deleniti? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde doloremque deserunt deleniti?",
     PictureSRC:
-      "https://live.staticflickr.com/65535/52050330047_fc245180d3_k.jpg",
+      "https://live.staticflickr.com/65535/52210164513_30f8efb8b2_b.jpg",
 
-    TechnologiesUsed: "PHP,...",
-    DemoLink: "https://www.google.com",
+    TechnologiesUsed: "Next JS, Tailwind CSS,...",
+    DemoLink: "https://landingpage-next-six.vercel.app/",
   },
+ 
+  
   {
     id: 2,
     Title: "Personal project",
@@ -118,5 +120,19 @@ export const projects = [
 
     TechnologiesUsed: "Firebase,...",
     DemoLink: "#",
+  },
+  {
+    id: 10,
+    Title: "PFE",
+    Societyname: "Hospital",
+    Minidescription:
+      "   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde doloremque deserunt deleniti?",
+    Description:
+      " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde doloremque deserunt delenitiLorem ipsum dolor sit amet consectetur, adipisicing elit. Unde doloremque deserunt deleniti? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde doloremque deserunt deleniti?",
+    PictureSRC:
+      "https://live.staticflickr.com/65535/52050330047_fc245180d3_k.jpg",
+
+    TechnologiesUsed: "PHP,...",
+    DemoLink: "https://www.google.com",
   },
 ];
