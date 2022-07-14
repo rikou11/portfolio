@@ -11,8 +11,8 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <>
-      <section className=" font-oxygen bg-pc h-fit pb-10">
+    
+      <section className=" font-oxygen bg-pc h-fit pb-10 py-20">
         <div className="relative z-10 bg-cover ">
           {" "}
           {/* <div className="h-40 w-40 rounded-ful blur-[100px] bg-yellow-500 absolute left-28 top-96"></div>
@@ -183,7 +183,7 @@ const HeroSection = () => {
           </div>
         </div>
       </section>
-    </>
+
   );
 };
 

@@ -2,6 +2,22 @@
 .font-oxygen {
   font-family: "Poppins", sans-serif;
 }
+
+
+html{scroll-behavior: smooth;}
+body::-webkit-scrollbar {
+  width: 12px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: rgb(39, 51, 146);        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(75, 254, 171);    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 3px solid rgb(179, 224, 212);  /* creates padding around scroll thumb */
+}
 .shapes-bg {
   background-image: url("./pages/img/me.svg");
   /* background-size: cover; */
@@ -106,6 +122,9 @@
   .bg-pc {
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+   
     background-image: url("../src/components/home/SPRK_default_preset_name_web_1920\ –\ 1.png");
   }
   #about {
@@ -114,6 +133,7 @@
     background-position: calc(100% + 160px);
     background-size: 500px;
     background-color: #292d99;
+    
   }
 }
 @media only screen and (max-width: 600px) {
@@ -158,6 +178,7 @@
   height: 300px;
   width: 300px;
   z-index: 2;
+
 }
 #mypic:hover {
   transform: scale(1.05);
@@ -200,4 +221,53 @@
 .intouch {
   flex-direction: column;
   align-items: center;
+}
+
+
+
+
+
+
+.top-to-btm {
+  position: relative;
+}
+.icon-position {
+  position: fixed;
+  bottom: 40px;
+  right: 25px;
+  z-index: 20;
+}
+.icon-style {
+  background-color: #f1f1f127;
+  border: 2px solid #fff;
+  border-radius: 50%;
+
+  padding: 15px 20px;
+  color: #fff;
+  cursor: pointer;
+  animation: movebtn 3s ease-in-out infinite;
+  transition: all 0.5s ease-in-out;
+}
+.icon-style:hover {
+  animation: none;
+  background: #fff;
+  color: #07ffa8;
+  border: 2px solid #07ffa8;
+}
+@keyframes movebtn {
+  0% {
+    transform: translateY(0px);
+  }
+  25% {
+    transform: translateY(12px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  75% {
+    transform: translateY(-12px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }

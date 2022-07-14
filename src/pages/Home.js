@@ -97,7 +97,7 @@ const Home = () => {
 
           </div>
         </div>
-        <div className="h-[150px] bg-[#0a094f] ">
+        <div className="h-[62px] bg-[#0a094f] ">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
             <path
               fill="#292D99"

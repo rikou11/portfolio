@@ -3,6 +3,7 @@ import Footer from "./Footer";
 import NavBar from "./NavBar";
 
 import AnimatedCursor from "react-animated-cursor";
+import ScrollToTop from "./ScrollTop";
 // import { Nav } from "./nav";
 
 
@@ -22,6 +23,7 @@ const Layout = ({ children }) => {
         }}>dark theme</button> */}
 
       {/* <Nav /> */}
+      <ScrollToTop/>
       <NavBar />
       <AnimatedCursor innerSize={8}
         outerSize={16}
