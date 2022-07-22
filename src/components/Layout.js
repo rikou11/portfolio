@@ -23,14 +23,14 @@ const Layout = ({ children }) => {
         }}>dark theme</button> */}
 
       {/* <Nav /> */}
-      <ScrollToTop/>
+      {/* <ScrollToTop/> */}
       <NavBar />
-      <AnimatedCursor innerSize={8}
+      {/* <AnimatedCursor innerSize={8}
         outerSize={16}
         color="17, 163, 231"
         outerAlpha={0.2}
         innerScale={0.7}
-        outerScale={4} />
+        outerScale={4} /> */}
       {children}
 
 

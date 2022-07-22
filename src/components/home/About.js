@@ -1,6 +1,8 @@
 import React from "react";
 // import about from './about.svg'
-import AboutPic from "./AboutPic";
+// import AboutPic from "./AboutPic";
+import pic from './—Pngtree—abstract human head brain social_6526113.png'
+
 const About = () => {
     return (
         <div id="about" className="h-fit py-20  font-oxygen ">
@@ -8,7 +10,7 @@ const About = () => {
             <div className="flex justify-center pt-10 mb-10">
                 <h1 className="text-6xl font-bold text-white">About Me</h1>
             </div>
-            <div className="grid grid-cols-1 gap-10 justify-center mx-10 justify-items-center lg:flex lg:justify-center">
+            <div className="grid grid-cols-1 gap-36 justify-center mx-10 justify-items-center lg:flex lg:justify-center">
                 <p className="text-gray-200 text-base max-w-[500px]">
                     -Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, assumenda
                     delectus! Accusamus nihil, illo sint dolorum illum error iste rerum
@@ -24,8 +26,8 @@ const About = () => {
                         aut eius ut adipis</span> dolorem dolores exercitationem obcaecati
                     inventore.
                 </p>
-                {/* <img className="img hover:scale-110" src={about} alt="about" /> */}
-                <AboutPic />
+                <img className="img hover:scale-110 h-[800px]" src={pic} alt="about" />
+                {/* <AboutPic /> */}
             </div>
 
         </div>

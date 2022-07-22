@@ -23,7 +23,7 @@ const NavBar = () => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
       id="nav"
-      className=" sticky top-0 z-50 navbar font-oxygen bg-[#292D99] "
+      className=" sticky top-0 z-50 navbar  bg-[#292D99] "
     >
       <motion.div initial={{ opacity: 0, y: -100 }}
         animate={{ opacity: 1, y: 0 }}
