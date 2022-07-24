@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Oxygen&family=Poppins:ital,wght@0,400;0,500;1,300&display=swap");
 .font-oxygen {
-  font-family: "Poppins", sans-serif;
+  font-family: "Aeonik";
 }
 
 
@@ -10,13 +10,13 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-  background: rgb(39, 51, 146);        /* color of the tracking area */
+  background: #273392;        /* color of the tracking area */
 }
 
 body::-webkit-scrollbar-thumb {
   background-color: rgb(75, 254, 171);    /* color of the scroll thumb */
   border-radius: 20px;       /* roundness of the scroll thumb */
-  border: 3px solid rgb(179, 224, 212);  /* creates padding around scroll thumb */
+  border: 3px solid #b3e0d4;  /* creates padding around scroll thumb */
 }
 .shapes-bg {
   background-image: url("./pages/img/me.svg");

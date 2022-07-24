@@ -1,3 +1,34 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url(//db.onlinewebfonts.com/c/c0c7e262b07e8f7d2bd87777a47e362f?family=Iskry+Regular);
+@import url(//db.onlinewebfonts.com/c/8f2a9d487bbbc60974cd132fc3a63862?family=Aeonik);
+@font-face {
+  font-family: "Aeonik";
+  src: url("//db.onlinewebfonts.com/t/8f2a9d487bbbc60974cd132fc3a63862.eot");
+  src: url("//db.onlinewebfonts.com/t/8f2a9d487bbbc60974cd132fc3a63862.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/8f2a9d487bbbc60974cd132fc3a63862.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/8f2a9d487bbbc60974cd132fc3a63862.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/8f2a9d487bbbc60974cd132fc3a63862.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/8f2a9d487bbbc60974cd132fc3a63862.svg#Aeonik")
+      format("svg");
+}
+@font-face {
+  font-family: "Iskry Regular";
+  src: url("//db.onlinewebfonts.com/t/c0c7e262b07e8f7d2bd87777a47e362f.eot");
+  src: url("//db.onlinewebfonts.com/t/c0c7e262b07e8f7d2bd87777a47e362f.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/c0c7e262b07e8f7d2bd87777a47e362f.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/c0c7e262b07e8f7d2bd87777a47e362f.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/c0c7e262b07e8f7d2bd87777a47e362f.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/c0c7e262b07e8f7d2bd87777a47e362f.svg#Iskry Regular")
+      format("svg");
+}
